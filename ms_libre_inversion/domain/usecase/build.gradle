@@ -1,0 +1,4 @@
+dependencies {
+    compile project(':model')
+    implementation 'co.com.bancolombia:technical-log:1.1'
+}

@@ -1,0 +1,38 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: #{service}#
+  namespace: #{namespace}#
+data:
+  application.yaml: |-
+    server:
+      port: #{container-port}#
+    spring:
+      application:
+        name: "Notifications"
+      devtools:
+        add-properties: false
+      profiles:
+        include: null
+    adapter:
+      email-basic:
+        urlBase: #{api-connect-gateway}#
+        url: #{url-email-basic}#
+      email-attached:
+          urlBase: #{api-connect-gateway}#
+          url: #{urlAttached}#
+      sms:
+        urlBase: #{api-connect-gateway}#
+        url: #{url-sms}#
+    header:
+      X-IBM-Client-Secret: #{client-secret-on-premise}#
+      X-IBM-Client-Id: #{client-id-on-premise}#
+    sqs:
+      queueUrl: #{sqs-url}#
+    eureka:
+      client:
+        register-with-eureka: true
+        fetch-registry: true
+      instance:
+        prefer-ip-address: true
+        hostname: localhost

@@ -1,0 +1,17 @@
+cHVyZWJhIGRlIHRhemFiaWxpZGFkTitulo: PROCESO DOCUMENTACION
+Fecha: 20-SEPTEMBER-202116:40:15
+ID Sesion: null
+IP: null
+Numero Documento: null
+Accion 2: registro pagare cliente proceso de documentacion
+Resultado: registro documento pagare exitoso
+Accion 1: registro datos cliente proceso de documentacion
+Resultado: cliente listo para iniciar con el proceso documental
+Accion 3: registro pagare cliente proceso de documentacion
+Titulo: CONSULTA DATOS CLIENTE 
+Fecha: 20-SEPTEMBER-202116:39:14
+ID Sesion: null
+IP: null
+Numero Documento: null
+Accion 1: Consulta de datos del cliente
+Resultado: datos del cliente encontrados exitomente

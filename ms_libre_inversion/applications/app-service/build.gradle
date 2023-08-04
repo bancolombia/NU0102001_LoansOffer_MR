@@ -1,0 +1,29 @@
+apply plugin: 'org.springframework.boot'
+
+dependencies {
+	implementation project(':async-event-bus')
+	implementation project(':soap-comsumer')
+    implementation project(':reactive-web')
+    implementation project(':rest-consumer')
+    compile 'org.springframework.boot:spring-boot-starter-webflux'
+    implementation project(':model')
+    implementation project(':usecase')
+    compile 'org.springframework.boot:spring-boot-starter'
+    compile 'org.reactivecommons.utils:object-mapper:0.1.0'
+    runtime('org.springframework.boot:spring-boot-devtools')
+
+    implementation platform('software.amazon.awssdk:bom:2.16.36')
+    implementation 'software.amazon.awssdk:sts:2.16.36'
+    implementation 'software.amazon.awssdk:s3:2.16.36'
+
+    implementation 'org.springframework.boot:spring-boot-starter-security'
+}
+
+configurations {
+    compile.exclude group: "org.apache.logging.log4j", module:"log4j-to-slf4j"
+}
+
+task explodedJar(type: Copy) {
+    with jar
+    into "${buildDir}/exploded"
+}

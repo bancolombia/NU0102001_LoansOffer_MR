@@ -1,0 +1,155 @@
+# Gradle
+# Build your Java project and run tests with Gradle using a Gradle wrapper script.
+# Add steps that analyze code, save build artifacts, deploy, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/java
+
+name: $(Build.SourceBranchName).$(date:yyyyMMdd)$(rev:.r)
+
+variables:
+  - name: 'artifactory.Repository'
+    value: 'build-NU0102001_LoansOffer/$(NU)/$(projectName)/$(componentName)'
+  - name: 'componentName'
+    value: 'ms_notification'  #hace referencia al nombre del folder
+  - name: 'NU'
+    value: 'NU0102001'
+  - name: 'projectName'
+    value: 'loansOffer'
+  - name: 'artifactName'
+    value: 'notification'
+  - name: 'reactiveWeb'
+    value: 'infrastructure/entry-points/reactive-web'
+  - name: 'reactiveRestConsumer'
+    value: 'infrastructure/driven-adapters/rest-consumer'
+  - name: 'model'
+    value: 'domain/model'
+  - name: 'usecase'
+    value: 'domain/usecase'
+  - name: 'appService'
+    value: 'applications/app-service'
+  - name: 'source'
+    value: 'src/main/java'
+  - name: 'sourceTestJava'
+    value: 'src/test/java'
+  - name: 'sourceTest'
+    value: 'build/test-results/test'
+  - name: 'sourceJacoco'
+    value: 'build/jacoco/test.exec'
+  - name: 'sourceBinaries'
+    value: 'build/classes'
+
+resources:
+  - repo: self
+
+trigger:
+  branches:
+    include:
+      - trunk
+  paths:
+    include:
+      - 'ms_notification/*'
+
+jobs:
+  - job: BuildJob
+    displayName: 'Build'
+    pool:
+      name: Build
+      demands:
+        - java
+    steps:
+      - task: SonarQubePrepare@4
+        displayName: 'Prepare analysis on SonarQube'
+        inputs:
+          SonarQube: SonarQube
+          scannerMode: CLI
+          configMode: manual
+          cliProjectKey: $(NU)_$(projectName)_$(componentName)
+          cliProjectName: $(NU)_$(projectName)_$(componentName)
+          cliProjectVersion: $(Build.BuildNumber)
+          cliSources: $(componentName)
+          extraProperties: |
+            sonar.projectKey=$(NU)_$(projectName)_$(componentName)
+            sonar.projectName=$(NU)_$(projectName)_$(componentName)
+            sonar.project.version=$(Build.BuildNumber)
+            sonar.branch.name=master
+            sonar.java.binaries=applications/app-service/build/classes
+            sonar.sourceEncoding=UTF-8
+            sonar.exclusions=**/*Test.java, **/*Factory.java,**/utils/**, **/*Config.java, **/*DTO.java, **/*Log.java,**/*Data.java,**/entry-points/**,**/model/**,**/usecase/**,**/driven-adapters/**,**/app-service/**,**/*MainApplication.java,**/*Util.java, **/*Mapper.java, **/*DataRepository.java, **/Config*.java, **/*Repository*.java, **/Logger*.java, **/Log*.java
+
+      - task: Gradle@2
+        inputs:
+          gradleWrapperFile: '$(componentName)/gradlew'
+          workingDirectory: '$(componentName)'
+          tasks: 'clean build jacocoTestReport test'
+          testResultsFiles: '$(componentName)/**/TEST-*.xml'
+          testRunTitle: '$(Build.DefinitionName)'
+          codeCoverageToolOption: None
+
+      - task: SonarQubeAnalyze@4
+        displayName: 'Run Code Analysis'
+
+      - task: PublishCodeCoverageResults@1
+        displayName: 'Publish code coverage'
+        inputs:
+          summaryFileLocation: '$(System.DefaultWorkingDirectory)/$(componentName)/build/reports/jacocoMergedReport/jacocoMergedReport.xml'
+
+      - task: Sonar-buildbreaker@8
+        displayName: 'Break Build on Quality Gate Failure'
+        inputs:
+          SonarQube: SonarQube
+
+      - task: PublishBuildArtifacts@1
+        displayName: 'Publish Artifact'
+        inputs:
+          PathtoPublish: $(componentName)/applications/app-service/build/libs
+          ArtifactName: '$(artifactName)'
+          publishLocation: 'Container'
+          condition: and(succeeded(), eq(variables['Build.SourceBranch'],'refs/heads/trunk'))
+
+      - task: PublishBuildArtifacts@1
+        displayName: 'Publish Dockerfile'
+        inputs:
+          PathtoPublish: $(componentName)/deployment/Dockerfile
+          ArtifactName: '$(artifactName)'
+          publishLocation: 'Container'
+          condition: and(succeeded(), eq(variables['Build.SourceBranch'],'refs/heads/trunk'))
+
+      - task: PublishBuildArtifacts@1
+        displayName: 'Publish k8'
+        inputs:
+          PathtoPublish: $(componentName)/deployment/k8
+          ArtifactName: 'k8'
+          publishLocation: 'Container'
+          condition: and(succeeded(), eq(variables['Build.SourceBranch'],'refs/heads/trunk'))
+
+      - task: PublishBuildArtifacts@1
+        displayName: 'Publish Acceptance Test'
+        inputs:
+          PathtoPublish: $(componentName)/AcceptanceTest
+          ArtifactName: 'acceptance_test'
+          publishLocation: 'Container'
+          condition: and(succeeded(), eq(variables['Build.SourceBranch'],'refs/heads/trunk'))
+
+      - task: PublishBuildArtifacts@1
+        displayName: 'Publish Performace Test'
+        inputs:
+          PathtoPublish: $(componentName)/PerformaceTest
+          ArtifactName: 'performance_test'
+          publishLocation: 'Container'
+          condition: and(succeeded(), eq(variables['Build.SourceBranch'],'refs/heads/trunk'))
+
+  - job: CierreVulnerabilidadesJob
+    displayName: 'Cierre de vulnerabilidades'
+    pool:
+      name: DevOpsPE-Seguridad
+    steps:
+
+      - task: codeAnalysis@3
+        displayName: 'codeAnalysis for Notifications'
+        inputs:
+          id: '$(id_asserts)'
+          secret: '$(secret_asserts)'
+          cwd: './'
+          subFolder: 'ms_notification'
+          mode: 'true'
+          test: 'static'
+        enabled: false

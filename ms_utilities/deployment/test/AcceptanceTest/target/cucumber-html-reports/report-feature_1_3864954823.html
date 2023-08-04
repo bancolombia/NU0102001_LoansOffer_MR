@@ -1,0 +1,1714 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports  - Feature: co/com/bancolombia/acceptancetest/feautures/snippet_interestrate.feature</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>AcceptanceTest</td>
+      <td>30 Mar 2022, 11:53</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Feature Report</h2>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+
+<thead>
+  <tr class="header dont-sort">
+      <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Feature</th>
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">co/com/bancolombia/acceptancetest/feautures/snippet_interestrate.feature</td>
+          <td      class="passed"    >20</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">20</td>
+
+          <td  class="passed"    >2</td>
+          <td >0</td>
+          <td class="total">2</td>
+
+          <td class="duration" data-value="5745619600">5.745</td>
+          <td class="passed">Passed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="feature">
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_1922747921.html">@ignore</a>
+</div>
+
+
+<div class="brief passed">
+  <span class="keyword indention">Feature</span>
+  <span class="name">co/com/bancolombia/acceptancetest/feautures/snippet_interestrate.feature</span>
+
+
+</div>
+
+        <div class="description indention">Validate that API returns the correct interest rate</div>
+
+        <div class="elements inner-level">
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.416</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">configure logPrettyResponse = true</span>
+
+  <span class="lead-duration duration">0.120</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">configure ssl = true</span>
+
+  <span class="lead-duration duration">0.232</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">configure retry = { count: 3, interval: 3000 }</span>
+
+  <span class="lead-duration duration">0.062</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def req_header = {message-id:'ce0b5865-24eb-4410-b6e8-75327d5554e1',id: '0b04f601-1120-4077-869b-0b6584cc08f0', deviceId: '1', token: '42d1b5d1-b650-4c3a-881a-dbd3df4df765', timestamp: '21-04-2021', consumer: 'APP', Content-Type:'application/vnd.bancolombia.v1+json',X-IBM-Client-Id:'3395d54f-19b8-4918-99d0-8d9afd634ac4', X-IBM-Client-Secret:'K6sR2tM2cS1xM6sY1pJ1uQ6cI3yA2eI7vV0oU3lX7kT0vH8eB0'}</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_2149468851.html">@P59</a>
+       <a href="report-tag_1922747921.html">@ignore</a>
+</div>
+
+
+  <span class="lead-duration duration">2.502</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-3">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Validate that the API return correct interest rate for G1 risk group and P59 plan</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-3" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-4">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-4" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">headers req_header</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">url 'https://api-aws-qa.apps.ambientesbc.com/int/testing/v1/operations/product-specific/loans/deposits/consumer-loan/interest-rate/internal/loanType/interestRate'</span>
+
+  <span class="lead-duration duration">0.006</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request {&quot;data&quot;: {&quot;customerSegment&quot;: &quot;S2&quot;,&quot;customerRelaibility&quot;: &quot;G1&quot;,&quot;fixedRateLoans&quot;: [{&quot;fixedRateLoanId&quot;: &quot;P59&quot;}],&quot;variableRateLoans&quot;: [{&quot;variableRateLoanType&quot;: &quot;P59&quot;}],&quot;amount&quot;: 10000000,&quot;loanTerm&quot;: 24}}</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method POST</span>
+
+  <span class="lead-duration duration">2.489</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-5">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-5" class="collapse collapsable-details">
+        <pre>11:53:12.958 request:
+1 &gt; POST https://api-aws-qa.apps.ambientesbc.com/int/testing/v1/operations/product-specific/loans/deposits/consumer-loan/interest-rate/internal/loanType/interestRate
+1 &gt; message-id: ce0b5865-24eb-4410-b6e8-75327d5554e1
+1 &gt; id: 0b04f601-1120-4077-869b-0b6584cc08f0
+1 &gt; deviceId: 1
+1 &gt; token: 42d1b5d1-b650-4c3a-881a-dbd3df4df765
+1 &gt; timestamp: 21-04-2021
+1 &gt; consumer: APP
+1 &gt; Content-Type: application/vnd.bancolombia.v1+json; charset=UTF-8
+1 &gt; X-IBM-Client-Id: 3395d54f-19b8-4918-99d0-8d9afd634ac4
+1 &gt; X-IBM-Client-Secret: K6sR2tM2cS1xM6sY1pJ1uQ6cI3yA2eI7vV0oU3lX7kT0vH8eB0
+1 &gt; Content-Length: 190
+1 &gt; Host: api-aws-qa.apps.ambientesbc.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.12)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;data&quot;:{&quot;variableRateLoans&quot;:[{&quot;variableRateLoanType&quot;:&quot;P59&quot;}],&quot;amount&quot;:10000000,&quot;loanTerm&quot;:24,&quot;customerSegment&quot;:&quot;S2&quot;,&quot;fixedRateLoans&quot;:[{&quot;fixedRateLoanId&quot;:&quot;P59&quot;}],&quot;customerRelaibility&quot;:&quot;G1&quot;}}
+
+11:53:15.275 response time in milliseconds: 2315
+1 &lt; 200
+1 &lt; X-Backside-Transport: OK OK
+1 &lt; Connection: Keep-Alive
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Content-Type: application/json
+1 &lt; Date: Wed, 30 Mar 2022 16:51:12 GMT
+1 &lt; X-Global-Transaction-ID: 69b2fabd62448a7f0018df61
+1 &lt; API-Version: 1.0.0
+1 &lt; RateLimit-Limit: 100/hour
+1 &lt; Message-id: ce0b5865-24eb-4410-b6e8-75327d5554e1
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains
+1 &lt; X-Frame-Options: DENY
+1 &lt; Cache-Control: private, no-cache, no-store, max-age=0, no-transform
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; Content-Security-Policy: default-src 'self' *.bancolombia.com
+1 &lt; Access-Control-Expose-Headers: APIm-Debug-Trans-Id, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-Global-Transaction-ID
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Methods: POST
+1 &lt; X-RateLimit-Limit: name=rate-limit-1,50;
+1 &lt; X-RateLimit-Remaining: name=rate-limit-1,48;
+{&quot;data&quot;:{&quot;rateRange&quot;:[{&quot;loanType&quot;:&quot;P59&quot;,&quot;rangeType&quot;:[{&quot;fixedTermDepositScore&quot;:0,&quot;rateType&quot;:&quot;F&quot;,&quot;minimumTerm&quot;:60,&quot;arrearsRate&quot;:0.21599,&quot;maximumTerm&quot;:60,&quot;monthlyRate&quot;:1.799917,&quot;annualNominalMonthlyRate&quot;:0.21599,&quot;maximumAmount&quot;:599999999,&quot;fixedTermDepositRate&quot;:0,&quot;minimumAmount&quot;:300000001,&quot;effectiveAnnualRate&quot;:0.238708},{&quot;fixedTermDepositScore&quot;:0,&quot;rateType&quot;:&quot;F&quot;,&quot;minimumTerm&quot;:60,&quot;arrearsRate&quot;:0.103788,&quot;maximumTerm&quot;:60,&quot;monthlyRate&quot;:0.8649,&quot;annualNominalMonthlyRate&quot;:0.103788,&quot;maximumAmount&quot;:300000000,&quot;fixedTermDepositRate&quot;:0,&quot;minimumAmount&quot;:300000000,&quot;effectiveAnnualRate&quot;:0.10887},{&quot;fixedTermDepositScore&quot;:0,&quot;rateType&quot;:&quot;F&quot;,&quot;minimumTerm&quot;:60,&quot;arrearsRate&quot;:0.108588,&quot;maximumTerm&quot;:60,&quot;monthlyRate&quot;:0.9049,&quot;annualNominalMonthlyRate&quot;:0.108588,&quot;maximumAmount&quot;:299999999,&quot;fixedTermDepositRate&quot;:0,&quot;minimumAmount&quot;:150000000,&quot;effectiveAnnualRate&quot;:0.114159},{&quot;fixedTermDepositScore&quot;:0,&quot;rateType&quot;:&quot;F&quot;,&quot;minimumTerm&quot;:60,&quot;arrearsRate&quot;:0.114588,&quot;maximumTerm&quot;:60,&quot;monthlyRate&quot;:0.9549,&quot;annualNominalMonthlyRate&quot;:0.114588,&quot;maximumAmount&quot;:149999999,&quot;fixedTermDepositRate&quot;:0,&quot;minimumAmount&quot;:60000000,&quot;effectiveAnnualRate&quot;:0.120802},{&quot;fixedTermDepositScore&quot;:0,&quot;rateType&quot;:&quot;F&quot;,&quot;minimumTerm&quot;:60,&quot;arrearsRate&quot;:0.123588,&quot;maximumTerm&quot;:60,&quot;monthlyRate&quot;:1.0299,&quot;annualNominalMonthlyRate&quot;:0.123588,&quot;maximumAmount&quot;:59999999,&quot;fixedTermDepositRate&quot;:0,&quot;minimumAmount&quot;:30000000,&quot;effectiveAnnualRate&quot;:0.130835},{&quot;fixedTermDepositScore&quot;:0,&quot;rateType&quot;:&quot;F&quot;,&quot;minimumTerm&quot;:60,&quot;arrearsRate&quot;:0.148788,&quot;maximumTerm&quot;:60,&quot;monthlyRate&quot;:1.2399,&quot;annualNominalMonthlyRate&quot;:0.148788,&quot;maximumAmount&quot;:29999999,&quot;fixedTermDepositRate&quot;:0,&quot;minimumAmount&quot;:12000000,&quot;effectiveAnnualRate&quot;:0.159366},{&quot;fixedTermDepositScore&quot;:0,&quot;rateType&quot;:&quot;F&quot;,&quot;minimumTerm&quot;:60,&quot;arrearsRate&quot;:0.168588,&quot;maximumTerm&quot;:60,&quot;monthlyRate&quot;:1.4049,&quot;annualNominalMonthlyRate&quot;:0.168588,&quot;maximumAmount&quot;:11999999,&quot;fixedTermDepositRate&quot;:0,&quot;minimumAmount&quot;:1000000,&quot;effectiveAnnualRate&quot;:0.182244},{&quot;fixedTermDepositScore&quot;:0,&quot;rateType&quot;:&quot;F&quot;,&quot;minimumTerm&quot;:48,&quot;arrearsRate&quot;:0.109788,&quot;maximumTerm&quot;:48,&quot;monthlyRate&quot;:0.9149,&quot;annualNominalMonthlyRate&quot;:0.109788,&quot;maximumAmount&quot;:300000000,&quot;fixedTermDepositRate&quot;:0,&quot;minimumAmount&quot;:300000000,&quot;effectiveAnnualRate&quot;:0.115484},{&quot;fixedTermDepositScore&quot;:0,&quot;rateType&quot;:&quot;F&quot;,&quot;minimumTerm&quot;:48,&quot;arrearsRate&quot;:0.114588,&quot;maximumTerm&quot;:48,&quot;monthlyRate&quot;:0.9549,&quot;annualNominalMonthlyRate&quot;:0.114588,&quot;maximumAmount&quot;:299999999,&quot;fixedTermDepositRate&quot;:0,&quot;minimumAmount&quot;:150000000,&quot;effectiveAnnualRate&quot;:0.120802},{&quot;fixedTermDepositScore&quot;:0,&quot;rateType&quot;:&quot;F&quot;,&quot;minimumTerm&quot;:48,&quot;arrearsRate&quot;:0.120588,&quot;maximumTerm&quot;:48,&quot;monthlyRate&quot;:1.0049,&quot;annualNominalMonthlyRate&quot;:0.120588,&quot;maximumAmount&quot;:149999999,&quot;fixedTermDepositRate&quot;:0,&quot;minimumAmount&quot;:60000000,&quot;effectiveAnnualRate&quot;:0.127481},{&quot;fixedTermDepositScore&quot;:0,&quot;rateType&quot;:&quot;F&quot;,&quot;minimumTerm&quot;:48,&quot;arrearsRate&quot;:0.129588,&quot;maximumTerm&quot;:48,&quot;monthlyRate&quot;:1.0799,&quot;annualNominalMonthlyRate&quot;:0.129588,&quot;maximumAmount&quot;:59999999,&quot;fixedTermDepositRate&quot;:0,&quot;minimumAmount&quot;:30000000,&quot;effectiveAnnualRate&quot;:0.137569},{&quot;fixedTermDepositScore&quot;:0,&quot;rateType&quot;:&quot;F&quot;,&quot;minimumTerm&quot;:48,&quot;arrearsRate&quot;:0.154788,&quot;maximumTerm&quot;:48,&quot;monthlyRate&quot;:1.2899,&quot;annualNominalMonthlyRate&quot;:0.154788,&quot;maximumAmount&quot;:29999999,&quot;fixedTermDepositRate&quot;:0,&quot;minimumAmount&quot;:12000000,&quot;effectiveAnnualRate&quot;:0.166256},{&quot;fixedTermDepositScore&quot;:0,&quot;rateType&quot;:&quot;F&quot;,&quot;minimumTerm&quot;:48,&quot;arrearsRate&quot;:0.174588,&quot;maximumTerm&quot;:48,&quot;monthlyRate&quot;:1.4549,&quot;annualNominalMonthlyRate&quot;:0.174588,&quot;maximumAmount&quot;:11999999,&quot;fixedTermDepositRate&quot;:0,&quot;minimumAmount&quot;:1000000,&quot;effectiveAnnualRate&quot;:0.189259},{&quot;fixedTermDepositScore&quot;:0,&quot;rateType&quot;:&quot;F&quot;,&quot;minimumTerm&quot;:36,&quot;arrearsRate&quot;:0.21599,&quot;maximumTerm&quot;:36,&quot;monthlyRate&quot;:1.799917,&quot;annualNominalMonthlyRate&quot;:0.21599,&quot;maximumAmount&quot;:599999999,&quot;fixedTermDepositRate&quot;:0,&quot;minimumAmount&quot;:300000001,&quot;effectiveAnnualRate&quot;:0.238708},{&quot;fixedTermDepositScore&quot;:0,&quot;rateType&quot;:&quot;F&quot;,&quot;minimumTerm&quot;:36,&quot;arrearsRate&quot;:0.21599,&quot;maximumTerm&quot;:36,&quot;monthlyRate&quot;:1.799917,&quot;annualNominalMonthlyRate&quot;:0.21599,&quot;maximumAmount&quot;:300000000,&quot;fixedTermDepositRate&quot;:0,&quot;minimumAmount&quot;:300000000,&quot;effectiveAnnualRate&quot;:0.238708},{&quot;fixedTermDepositScore&quot;:0,&quot;rateType&quot;:&quot;F&quot;,&quot;minimumTerm&quot;:36,&quot;arrearsRate&quot;:0.21599,&quot;maximumTerm&quot;:36,&quot;monthlyRate&quot;:1.799917,&quot;annualNominalMonthlyRate&quot;:0.21599,&quot;maximumAmount&quot;:149999999,&quot;fixedTermDepositRate&quot;:0,&quot;minimumAmount&quot;:60000000,&quot;effectiveAnnualRate&quot;:0.238708},{&quot;fixedTermDepositScore&quot;:0,&quot;rateType&quot;:&quot;F&quot;,&quot;minimumTerm&quot;:36,&quot;arrearsRate&quot;:0.21599,&quot;maximumTerm&quot;:36,&quot;monthlyRate&quot;:1.799917,&quot;annualNominalMonthlyRate&quot;:0.21599,&quot;maximumAmount&quot;:59999999,&quot;fixedTermDepositRate&quot;:0,&quot;minimumAmount&quot;:30000000,&quot;effectiveAnnualRate&quot;:0.238708},{&quot;fixedTermDepositScore&quot;:0,&quot;rateType&quot;:&quot;F&quot;,&quot;minimumTerm&quot;:36,&quot;arrearsRate&quot;:0.21599,&quot;maximumTerm&quot;:36,&quot;monthlyRate&quot;:1.799917,&quot;annualNominalMonthlyRate&quot;:0.21599,&quot;maximumAmount&quot;:29999999,&quot;fixedTermDepositRate&quot;:0,&quot;minimumAmount&quot;:12000000,&quot;effectiveAnnualRate&quot;:0.238708},{&quot;fixedTermDepositScore&quot;:0,&quot;rateType&quot;:&quot;F&quot;,&quot;minimumTerm&quot;:36,&quot;arrearsRate&quot;:0.21599,&quot;maximumTerm&quot;:36,&quot;monthlyRate&quot;:1.799917,&quot;annualNominalMonthlyRate&quot;:0.21599,&quot;maximumAmount&quot;:11999999,&quot;fixedTermDepositRate&quot;:0,&quot;minimumAmount&quot;:1000000,&quot;effectiveAnnualRate&quot;:0.238708},{&quot;fixedTermDepositScore&quot;:0,&quot;rateType&quot;:&quot;F&quot;,&quot;minimumTerm&quot;:24,&quot;arrearsRate&quot;:0.119318,&quot;maximumTerm&quot;:24,&quot;monthlyRate&quot;:0.994321,&quot;annualNominalMonthlyRate&quot;:0.119318,&quot;maximumAmount&quot;:300000000,&quot;fixedTermDepositRate&quot;:0,&quot;minimumAmount&quot;:300000000,&quot;effectiveAnnualRate&quot;:0.126065},{&quot;fixedTermDepositScore&quot;:0,&quot;rateType&quot;:&quot;F&quot;,&quot;minimumTerm&quot;:24,&quot;arrearsRate&quot;:0.124118,&quot;maximumTerm&quot;:24,&quot;monthlyRate&quot;:1.034321,&quot;annualNominalMonthlyRate&quot;:0.124118,&quot;maximumAmount&quot;:299999999,&quot;fixedTermDepositRate&quot;:0,&quot;minimumAmount&quot;:150000000,&quot;effectiveAnnualRate&quot;:0.131429},{&quot;fixedTermDepositScore&quot;:0,&quot;rateType&quot;:&quot;F&quot;,&quot;minimumTerm&quot;:24,&quot;arrearsRate&quot;:0.130118,&quot;maximumTerm&quot;:24,&quot;monthlyRate&quot;:1.084321,&quot;annualNominalMonthlyRate&quot;:0.130118,&quot;maximumAmount&quot;:149999999,&quot;fixedTermDepositRate&quot;:0,&quot;minimumAmount&quot;:60000000,&quot;effectiveAnnualRate&quot;:0.138166},{&quot;fixedTermDepositScore&quot;:0,&quot;rateType&quot;:&quot;F&quot;,&quot;minimumTerm&quot;:24,&quot;arrearsRate&quot;:0.139718,&quot;maximumTerm&quot;:24,&quot;monthlyRate&quot;:1.164321,&quot;annualNominalMonthlyRate&quot;:0.139718,&quot;maximumAmount&quot;:59999999,&quot;fixedTermDepositRate&quot;:0,&quot;minimumAmount&quot;:30000000,&quot;effectiveAnnualRate&quot;:0.149022},{&quot;fixedTermDepositScore&quot;:0,&quot;rateType&quot;:&quot;F&quot;,&quot;minimumTerm&quot;:24,&quot;arrearsRate&quot;:0.167318,&quot;maximumTerm&quot;:24,&quot;monthlyRate&quot;:1.394321,&quot;annualNominalMonthlyRate&quot;:0.167318,&quot;maximumAmount&quot;:29999999,&quot;fixedTermDepositRate&quot;:0,&quot;minimumAmount&quot;:12000000,&quot;effectiveAnnualRate&quot;:0.180765},{&quot;fixedTermDepositScore&quot;:0,&quot;rateType&quot;:&quot;F&quot;,&quot;minimumTerm&quot;:24,&quot;arrearsRate&quot;:0.180518,&quot;maximumTerm&quot;:24,&quot;monthlyRate&quot;:1.504321,&quot;annualNominalMonthlyRate&quot;:0.180518,&quot;maximumAmount&quot;:11999999,&quot;fixedTermDepositRate&quot;:0,&quot;minimumAmount&quot;:1000000,&quot;effectiveAnnualRate&quot;:0.196229}]}],&quot;header&quot;:{&quot;id&quot;:&quot;1&quot;,&quot;type&quot;:&quot;interestRateInternal&quot;}},&quot;meta&quot;:{&quot;_requestDateTime&quot;:&quot;2022-03-30T11:51:11.753Z&quot;,&quot;_applicationId&quot;:&quot;3395d54f-19b8-4918-99d0-8d9afd634ac4&quot;,&quot;_messageId&quot;:&quot;ce0b5865-24eb-4410-b6e8-75327d5554e1&quot;},&quot;links&quot;:{&quot;self&quot;:&quot;\/v1\/operations\/product-specific\/loans\/deposits\/consumer-loan\/interest-rate\/internal\/loanType\/interestRate&quot;}}
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.004</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-6">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-6" class="collapse collapsable-details">
+        <pre>11:53:15.281 [print] {
+  &quot;data&quot;: {
+    &quot;rateRange&quot;: [
+      {
+        &quot;loanType&quot;: &quot;P59&quot;,
+        &quot;rangeType&quot;: [
+          {
+            &quot;fixedTermDepositScore&quot;: 0,
+            &quot;rateType&quot;: &quot;F&quot;,
+            &quot;minimumTerm&quot;: 60,
+            &quot;arrearsRate&quot;: 0.21599,
+            &quot;maximumTerm&quot;: 60,
+            &quot;monthlyRate&quot;: 1.799917,
+            &quot;annualNominalMonthlyRate&quot;: 0.21599,
+            &quot;maximumAmount&quot;: 599999999,
+            &quot;fixedTermDepositRate&quot;: 0,
+            &quot;minimumAmount&quot;: 300000001,
+            &quot;effectiveAnnualRate&quot;: 0.238708
+          },
+          {
+            &quot;fixedTermDepositScore&quot;: 0,
+            &quot;rateType&quot;: &quot;F&quot;,
+            &quot;minimumTerm&quot;: 60,
+            &quot;arrearsRate&quot;: 0.103788,
+            &quot;maximumTerm&quot;: 60,
+            &quot;monthlyRate&quot;: 0.8649,
+            &quot;annualNominalMonthlyRate&quot;: 0.103788,
+            &quot;maximumAmount&quot;: 300000000,
+            &quot;fixedTermDepositRate&quot;: 0,
+            &quot;minimumAmount&quot;: 300000000,
+            &quot;effectiveAnnualRate&quot;: 0.10887
+          },
+          {
+            &quot;fixedTermDepositScore&quot;: 0,
+            &quot;rateType&quot;: &quot;F&quot;,
+            &quot;minimumTerm&quot;: 60,
+            &quot;arrearsRate&quot;: 0.108588,
+            &quot;maximumTerm&quot;: 60,
+            &quot;monthlyRate&quot;: 0.9049,
+            &quot;annualNominalMonthlyRate&quot;: 0.108588,
+            &quot;maximumAmount&quot;: 299999999,
+            &quot;fixedTermDepositRate&quot;: 0,
+            &quot;minimumAmount&quot;: 150000000,
+            &quot;effectiveAnnualRate&quot;: 0.114159
+          },
+          {
+            &quot;fixedTermDepositScore&quot;: 0,
+            &quot;rateType&quot;: &quot;F&quot;,
+            &quot;minimumTerm&quot;: 60,
+            &quot;arrearsRate&quot;: 0.114588,
+            &quot;maximumTerm&quot;: 60,
+            &quot;monthlyRate&quot;: 0.9549,
+            &quot;annualNominalMonthlyRate&quot;: 0.114588,
+            &quot;maximumAmount&quot;: 149999999,
+            &quot;fixedTermDepositRate&quot;: 0,
+            &quot;minimumAmount&quot;: 60000000,
+            &quot;effectiveAnnualRate&quot;: 0.120802
+          },
+          {
+            &quot;fixedTermDepositScore&quot;: 0,
+            &quot;rateType&quot;: &quot;F&quot;,
+            &quot;minimumTerm&quot;: 60,
+            &quot;arrearsRate&quot;: 0.123588,
+            &quot;maximumTerm&quot;: 60,
+            &quot;monthlyRate&quot;: 1.0299,
+            &quot;annualNominalMonthlyRate&quot;: 0.123588,
+            &quot;maximumAmount&quot;: 59999999,
+            &quot;fixedTermDepositRate&quot;: 0,
+            &quot;minimumAmount&quot;: 30000000,
+            &quot;effectiveAnnualRate&quot;: 0.130835
+          },
+          {
+            &quot;fixedTermDepositScore&quot;: 0,
+            &quot;rateType&quot;: &quot;F&quot;,
+            &quot;minimumTerm&quot;: 60,
+            &quot;arrearsRate&quot;: 0.148788,
+            &quot;maximumTerm&quot;: 60,
+            &quot;monthlyRate&quot;: 1.2399,
+            &quot;annualNominalMonthlyRate&quot;: 0.148788,
+            &quot;maximumAmount&quot;: 29999999,
+            &quot;fixedTermDepositRate&quot;: 0,
+            &quot;minimumAmount&quot;: 12000000,
+            &quot;effectiveAnnualRate&quot;: 0.159366
+          },
+          {
+            &quot;fixedTermDepositScore&quot;: 0,
+            &quot;rateType&quot;: &quot;F&quot;,
+            &quot;minimumTerm&quot;: 60,
+            &quot;arrearsRate&quot;: 0.168588,
+            &quot;maximumTerm&quot;: 60,
+            &quot;monthlyRate&quot;: 1.4049,
+            &quot;annualNominalMonthlyRate&quot;: 0.168588,
+            &quot;maximumAmount&quot;: 11999999,
+            &quot;fixedTermDepositRate&quot;: 0,
+            &quot;minimumAmount&quot;: 1000000,
+            &quot;effectiveAnnualRate&quot;: 0.182244
+          },
+          {
+            &quot;fixedTermDepositScore&quot;: 0,
+            &quot;rateType&quot;: &quot;F&quot;,
+            &quot;minimumTerm&quot;: 48,
+            &quot;arrearsRate&quot;: 0.109788,
+            &quot;maximumTerm&quot;: 48,
+            &quot;monthlyRate&quot;: 0.9149,
+            &quot;annualNominalMonthlyRate&quot;: 0.109788,
+            &quot;maximumAmount&quot;: 300000000,
+            &quot;fixedTermDepositRate&quot;: 0,
+            &quot;minimumAmount&quot;: 300000000,
+            &quot;effectiveAnnualRate&quot;: 0.115484
+          },
+          {
+            &quot;fixedTermDepositScore&quot;: 0,
+            &quot;rateType&quot;: &quot;F&quot;,
+            &quot;minimumTerm&quot;: 48,
+            &quot;arrearsRate&quot;: 0.114588,
+            &quot;maximumTerm&quot;: 48,
+            &quot;monthlyRate&quot;: 0.9549,
+            &quot;annualNominalMonthlyRate&quot;: 0.114588,
+            &quot;maximumAmount&quot;: 299999999,
+            &quot;fixedTermDepositRate&quot;: 0,
+            &quot;minimumAmount&quot;: 150000000,
+            &quot;effectiveAnnualRate&quot;: 0.120802
+          },
+          {
+            &quot;fixedTermDepositScore&quot;: 0,
+            &quot;rateType&quot;: &quot;F&quot;,
+            &quot;minimumTerm&quot;: 48,
+            &quot;arrearsRate&quot;: 0.120588,
+            &quot;maximumTerm&quot;: 48,
+            &quot;monthlyRate&quot;: 1.0049,
+            &quot;annualNominalMonthlyRate&quot;: 0.120588,
+            &quot;maximumAmount&quot;: 149999999,
+            &quot;fixedTermDepositRate&quot;: 0,
+            &quot;minimumAmount&quot;: 60000000,
+            &quot;effectiveAnnualRate&quot;: 0.127481
+          },
+          {
+            &quot;fixedTermDepositScore&quot;: 0,
+            &quot;rateType&quot;: &quot;F&quot;,
+            &quot;minimumTerm&quot;: 48,
+            &quot;arrearsRate&quot;: 0.129588,
+            &quot;maximumTerm&quot;: 48,
+            &quot;monthlyRate&quot;: 1.0799,
+            &quot;annualNominalMonthlyRate&quot;: 0.129588,
+            &quot;maximumAmount&quot;: 59999999,
+            &quot;fixedTermDepositRate&quot;: 0,
+            &quot;minimumAmount&quot;: 30000000,
+            &quot;effectiveAnnualRate&quot;: 0.137569
+          },
+          {
+            &quot;fixedTermDepositScore&quot;: 0,
+            &quot;rateType&quot;: &quot;F&quot;,
+            &quot;minimumTerm&quot;: 48,
+            &quot;arrearsRate&quot;: 0.154788,
+            &quot;maximumTerm&quot;: 48,
+            &quot;monthlyRate&quot;: 1.2899,
+            &quot;annualNominalMonthlyRate&quot;: 0.154788,
+            &quot;maximumAmount&quot;: 29999999,
+            &quot;fixedTermDepositRate&quot;: 0,
+            &quot;minimumAmount&quot;: 12000000,
+            &quot;effectiveAnnualRate&quot;: 0.166256
+          },
+          {
+            &quot;fixedTermDepositScore&quot;: 0,
+            &quot;rateType&quot;: &quot;F&quot;,
+            &quot;minimumTerm&quot;: 48,
+            &quot;arrearsRate&quot;: 0.174588,
+            &quot;maximumTerm&quot;: 48,
+            &quot;monthlyRate&quot;: 1.4549,
+            &quot;annualNominalMonthlyRate&quot;: 0.174588,
+            &quot;maximumAmount&quot;: 11999999,
+            &quot;fixedTermDepositRate&quot;: 0,
+            &quot;minimumAmount&quot;: 1000000,
+            &quot;effectiveAnnualRate&quot;: 0.189259
+          },
+          {
+            &quot;fixedTermDepositScore&quot;: 0,
+            &quot;rateType&quot;: &quot;F&quot;,
+            &quot;minimumTerm&quot;: 36,
+            &quot;arrearsRate&quot;: 0.21599,
+            &quot;maximumTerm&quot;: 36,
+            &quot;monthlyRate&quot;: 1.799917,
+            &quot;annualNominalMonthlyRate&quot;: 0.21599,
+            &quot;maximumAmount&quot;: 599999999,
+            &quot;fixedTermDepositRate&quot;: 0,
+            &quot;minimumAmount&quot;: 300000001,
+            &quot;effectiveAnnualRate&quot;: 0.238708
+          },
+          {
+            &quot;fixedTermDepositScore&quot;: 0,
+            &quot;rateType&quot;: &quot;F&quot;,
+            &quot;minimumTerm&quot;: 36,
+            &quot;arrearsRate&quot;: 0.21599,
+            &quot;maximumTerm&quot;: 36,
+            &quot;monthlyRate&quot;: 1.799917,
+            &quot;annualNominalMonthlyRate&quot;: 0.21599,
+            &quot;maximumAmount&quot;: 300000000,
+            &quot;fixedTermDepositRate&quot;: 0,
+            &quot;minimumAmount&quot;: 300000000,
+            &quot;effectiveAnnualRate&quot;: 0.238708
+          },
+          {
+            &quot;fixedTermDepositScore&quot;: 0,
+            &quot;rateType&quot;: &quot;F&quot;,
+            &quot;minimumTerm&quot;: 36,
+            &quot;arrearsRate&quot;: 0.21599,
+            &quot;maximumTerm&quot;: 36,
+            &quot;monthlyRate&quot;: 1.799917,
+            &quot;annualNominalMonthlyRate&quot;: 0.21599,
+            &quot;maximumAmount&quot;: 149999999,
+            &quot;fixedTermDepositRate&quot;: 0,
+            &quot;minimumAmount&quot;: 60000000,
+            &quot;effectiveAnnualRate&quot;: 0.238708
+          },
+          {
+            &quot;fixedTermDepositScore&quot;: 0,
+            &quot;rateType&quot;: &quot;F&quot;,
+            &quot;minimumTerm&quot;: 36,
+            &quot;arrearsRate&quot;: 0.21599,
+            &quot;maximumTerm&quot;: 36,
+            &quot;monthlyRate&quot;: 1.799917,
+            &quot;annualNominalMonthlyRate&quot;: 0.21599,
+            &quot;maximumAmount&quot;: 59999999,
+            &quot;fixedTermDepositRate&quot;: 0,
+            &quot;minimumAmount&quot;: 30000000,
+            &quot;effectiveAnnualRate&quot;: 0.238708
+          },
+          {
+            &quot;fixedTermDepositScore&quot;: 0,
+            &quot;rateType&quot;: &quot;F&quot;,
+            &quot;minimumTerm&quot;: 36,
+            &quot;arrearsRate&quot;: 0.21599,
+            &quot;maximumTerm&quot;: 36,
+            &quot;monthlyRate&quot;: 1.799917,
+            &quot;annualNominalMonthlyRate&quot;: 0.21599,
+            &quot;maximumAmount&quot;: 29999999,
+            &quot;fixedTermDepositRate&quot;: 0,
+            &quot;minimumAmount&quot;: 12000000,
+            &quot;effectiveAnnualRate&quot;: 0.238708
+          },
+          {
+            &quot;fixedTermDepositScore&quot;: 0,
+            &quot;rateType&quot;: &quot;F&quot;,
+            &quot;minimumTerm&quot;: 36,
+            &quot;arrearsRate&quot;: 0.21599,
+            &quot;maximumTerm&quot;: 36,
+            &quot;monthlyRate&quot;: 1.799917,
+            &quot;annualNominalMonthlyRate&quot;: 0.21599,
+            &quot;maximumAmount&quot;: 11999999,
+            &quot;fixedTermDepositRate&quot;: 0,
+            &quot;minimumAmount&quot;: 1000000,
+            &quot;effectiveAnnualRate&quot;: 0.238708
+          },
+          {
+            &quot;fixedTermDepositScore&quot;: 0,
+            &quot;rateType&quot;: &quot;F&quot;,
+            &quot;minimumTerm&quot;: 24,
+            &quot;arrearsRate&quot;: 0.119318,
+            &quot;maximumTerm&quot;: 24,
+            &quot;monthlyRate&quot;: 0.994321,
+            &quot;annualNominalMonthlyRate&quot;: 0.119318,
+            &quot;maximumAmount&quot;: 300000000,
+            &quot;fixedTermDepositRate&quot;: 0,
+            &quot;minimumAmount&quot;: 300000000,
+            &quot;effectiveAnnualRate&quot;: 0.126065
+          },
+          {
+            &quot;fixedTermDepositScore&quot;: 0,
+            &quot;rateType&quot;: &quot;F&quot;,
+            &quot;minimumTerm&quot;: 24,
+            &quot;arrearsRate&quot;: 0.124118,
+            &quot;maximumTerm&quot;: 24,
+            &quot;monthlyRate&quot;: 1.034321,
+            &quot;annualNominalMonthlyRate&quot;: 0.124118,
+            &quot;maximumAmount&quot;: 299999999,
+            &quot;fixedTermDepositRate&quot;: 0,
+            &quot;minimumAmount&quot;: 150000000,
+            &quot;effectiveAnnualRate&quot;: 0.131429
+          },
+          {
+            &quot;fixedTermDepositScore&quot;: 0,
+            &quot;rateType&quot;: &quot;F&quot;,
+            &quot;minimumTerm&quot;: 24,
+            &quot;arrearsRate&quot;: 0.130118,
+            &quot;maximumTerm&quot;: 24,
+            &quot;monthlyRate&quot;: 1.084321,
+            &quot;annualNominalMonthlyRate&quot;: 0.130118,
+            &quot;maximumAmount&quot;: 149999999,
+            &quot;fixedTermDepositRate&quot;: 0,
+            &quot;minimumAmount&quot;: 60000000,
+            &quot;effectiveAnnualRate&quot;: 0.138166
+          },
+          {
+            &quot;fixedTermDepositScore&quot;: 0,
+            &quot;rateType&quot;: &quot;F&quot;,
+            &quot;minimumTerm&quot;: 24,
+            &quot;arrearsRate&quot;: 0.139718,
+            &quot;maximumTerm&quot;: 24,
+            &quot;monthlyRate&quot;: 1.164321,
+            &quot;annualNominalMonthlyRate&quot;: 0.139718,
+            &quot;maximumAmount&quot;: 59999999,
+            &quot;fixedTermDepositRate&quot;: 0,
+            &quot;minimumAmount&quot;: 30000000,
+            &quot;effectiveAnnualRate&quot;: 0.149022
+          },
+          {
+            &quot;fixedTermDepositScore&quot;: 0,
+            &quot;rateType&quot;: &quot;F&quot;,
+            &quot;minimumTerm&quot;: 24,
+            &quot;arrearsRate&quot;: 0.167318,
+            &quot;maximumTerm&quot;: 24,
+            &quot;monthlyRate&quot;: 1.394321,
+            &quot;annualNominalMonthlyRate&quot;: 0.167318,
+            &quot;maximumAmount&quot;: 29999999,
+            &quot;fixedTermDepositRate&quot;: 0,
+            &quot;minimumAmount&quot;: 12000000,
+            &quot;effectiveAnnualRate&quot;: 0.180765
+          },
+          {
+            &quot;fixedTermDepositScore&quot;: 0,
+            &quot;rateType&quot;: &quot;F&quot;,
+            &quot;minimumTerm&quot;: 24,
+            &quot;arrearsRate&quot;: 0.180518,
+            &quot;maximumTerm&quot;: 24,
+            &quot;monthlyRate&quot;: 1.504321,
+            &quot;annualNominalMonthlyRate&quot;: 0.180518,
+            &quot;maximumAmount&quot;: 11999999,
+            &quot;fixedTermDepositRate&quot;: 0,
+            &quot;minimumAmount&quot;: 1000000,
+            &quot;effectiveAnnualRate&quot;: 0.196229
+          }
+        ]
+      }
+    ],
+    &quot;header&quot;: {
+      &quot;id&quot;: &quot;1&quot;,
+      &quot;type&quot;: &quot;interestRateInternal&quot;
+    }
+  },
+  &quot;meta&quot;: {
+    &quot;_requestDateTime&quot;: &quot;2022-03-30T11:51:11.753Z&quot;,
+    &quot;_applicationId&quot;: &quot;3395d54f-19b8-4918-99d0-8d9afd634ac4&quot;,
+    &quot;_messageId&quot;: &quot;ce0b5865-24eb-4410-b6e8-75327d5554e1&quot;
+  },
+  &quot;links&quot;: {
+    &quot;self&quot;: &quot;/v1/operations/product-specific/loans/deposits/consumer-loan/interest-rate/internal/loanType/interestRate&quot;
+  }
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">response.status= 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.417</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-7">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-7" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-8">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-8" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">configure logPrettyResponse = true</span>
+
+  <span class="lead-duration duration">0.119</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">configure ssl = true</span>
+
+  <span class="lead-duration duration">0.232</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">configure retry = { count: 3, interval: 3000 }</span>
+
+  <span class="lead-duration duration">0.063</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def req_header = {message-id:'ce0b5865-24eb-4410-b6e8-75327d5554e1',id: '0b04f601-1120-4077-869b-0b6584cc08f0', deviceId: '1', token: '42d1b5d1-b650-4c3a-881a-dbd3df4df765', timestamp: '21-04-2021', consumer: 'APP', Content-Type:'application/vnd.bancolombia.v1+json',X-IBM-Client-Id:'3395d54f-19b8-4918-99d0-8d9afd634ac4', X-IBM-Client-Secret:'K6sR2tM2cS1xM6sY1pJ1uQ6cI3yA2eI7vV0oU3lX7kT0vH8eB0'}</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_2149469219.html">@PA5</a>
+       <a href="report-tag_1922747921.html">@ignore</a>
+</div>
+
+
+  <span class="lead-duration duration">2.409</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-9">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Validate that the API return correct interest rate for G1 risk group and P59 plan</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-9" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-10">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-10" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">headers req_header</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">url 'https://api-aws-qa.apps.ambientesbc.com/int/testing/v1/operations/product-specific/loans/deposits/consumer-loan/interest-rate/internal/loanType/interestRate'</span>
+
+  <span class="lead-duration duration">0.004</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request {&quot;data&quot;: {&quot;customerSegment&quot;: &quot;S2&quot;,&quot;customerRelaibility&quot;: &quot;G1&quot;,&quot;fixedRateLoans&quot;: [{&quot;fixedRateLoanId&quot;: &quot;PA5&quot;}],&quot;variableRateLoans&quot;: [{&quot;variableRateLoanType&quot;: &quot;PA5&quot;}],&quot;amount&quot;: 10000000,&quot;loanTerm&quot;: 24}}</span>
+
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method POST</span>
+
+  <span class="lead-duration duration">2.395</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-11">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-11" class="collapse collapsable-details">
+        <pre>11:53:12.957 request:
+1 &gt; POST https://api-aws-qa.apps.ambientesbc.com/int/testing/v1/operations/product-specific/loans/deposits/consumer-loan/interest-rate/internal/loanType/interestRate
+1 &gt; message-id: ce0b5865-24eb-4410-b6e8-75327d5554e1
+1 &gt; id: 0b04f601-1120-4077-869b-0b6584cc08f0
+1 &gt; deviceId: 1
+1 &gt; token: 42d1b5d1-b650-4c3a-881a-dbd3df4df765
+1 &gt; timestamp: 21-04-2021
+1 &gt; consumer: APP
+1 &gt; Content-Type: application/vnd.bancolombia.v1+json; charset=UTF-8
+1 &gt; X-IBM-Client-Id: 3395d54f-19b8-4918-99d0-8d9afd634ac4
+1 &gt; X-IBM-Client-Secret: K6sR2tM2cS1xM6sY1pJ1uQ6cI3yA2eI7vV0oU3lX7kT0vH8eB0
+1 &gt; Content-Length: 190
+1 &gt; Host: api-aws-qa.apps.ambientesbc.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.12)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;data&quot;:{&quot;variableRateLoans&quot;:[{&quot;variableRateLoanType&quot;:&quot;PA5&quot;}],&quot;amount&quot;:10000000,&quot;loanTerm&quot;:24,&quot;customerSegment&quot;:&quot;S2&quot;,&quot;fixedRateLoans&quot;:[{&quot;fixedRateLoanId&quot;:&quot;PA5&quot;}],&quot;customerRelaibility&quot;:&quot;G1&quot;}}
+
+11:53:15.183 response time in milliseconds: 2225
+1 &lt; 200
+1 &lt; X-Backside-Transport: OK OK
+1 &lt; Connection: Keep-Alive
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Content-Type: application/json
+1 &lt; Date: Wed, 30 Mar 2022 16:51:11 GMT
+1 &lt; X-Global-Transaction-ID: 69b2fabd62448a7f0018df51
+1 &lt; API-Version: 1.0.0
+1 &lt; RateLimit-Limit: 100/hour
+1 &lt; Message-id: ce0b5865-24eb-4410-b6e8-75327d5554e1
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains
+1 &lt; X-Frame-Options: DENY
+1 &lt; Cache-Control: private, no-cache, no-store, max-age=0, no-transform
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; Content-Security-Policy: default-src 'self' *.bancolombia.com
+1 &lt; Access-Control-Expose-Headers: APIm-Debug-Trans-Id, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-Global-Transaction-ID
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Methods: POST
+1 &lt; X-RateLimit-Limit: name=rate-limit-1,50;
+1 &lt; X-RateLimit-Remaining: name=rate-limit-1,49;
+{&quot;data&quot;:{&quot;rateRange&quot;:[{&quot;loanType&quot;:&quot;PA5&quot;,&quot;rangeType&quot;:[{&quot;fixedTermDepositScore&quot;:0,&quot;rateType&quot;:&quot;F&quot;,&quot;minimumTerm&quot;:60,&quot;arrearsRate&quot;:0.097788,&quot;maximumTerm&quot;:60,&quot;monthlyRate&quot;:0.8149,&quot;annualNominalMonthlyRate&quot;:0.097788,&quot;maximumAmount&quot;:300000000,&quot;fixedTermDepositRate&quot;:0,&quot;minimumAmount&quot;:300000000,&quot;effectiveAnnualRate&quot;:0.102292},{&quot;fixedTermDepositScore&quot;:0,&quot;rateType&quot;:&quot;F&quot;,&quot;minimumTerm&quot;:60,&quot;arrearsRate&quot;:0.102588,&quot;maximumTerm&quot;:60,&quot;monthlyRate&quot;:0.8549,&quot;annualNominalMonthlyRate&quot;:0.102588,&quot;maximumAmount&quot;:299999999,&quot;fixedTermDepositRate&quot;:0,&quot;minimumAmount&quot;:150000000,&quot;effectiveAnnualRate&quot;:0.107552},{&quot;fixedTermDepositScore&quot;:0,&quot;rateType&quot;:&quot;F&quot;,&quot;minimumTerm&quot;:60,&quot;arrearsRate&quot;:0.108588,&quot;maximumTerm&quot;:60,&quot;monthlyRate&quot;:0.9049,&quot;annualNominalMonthlyRate&quot;:0.108588,&quot;maximumAmount&quot;:149999999,&quot;fixedTermDepositRate&quot;:0,&quot;minimumAmount&quot;:60000000,&quot;effectiveAnnualRate&quot;:0.114159},{&quot;fixedTermDepositScore&quot;:0,&quot;rateType&quot;:&quot;F&quot;,&quot;minimumTerm&quot;:60,&quot;arrearsRate&quot;:0.117588,&quot;maximumTerm&quot;:60,&quot;monthlyRate&quot;:0.9799,&quot;annualNominalMonthlyRate&quot;:0.117588,&quot;maximumAmount&quot;:59999999,&quot;fixedTermDepositRate&quot;:0,&quot;minimumAmount&quot;:30000000,&quot;effectiveAnnualRate&quot;:0.124137},{&quot;fixedTermDepositScore&quot;:0,&quot;rateType&quot;:&quot;F&quot;,&quot;minimumTerm&quot;:60,&quot;arrearsRate&quot;:0.142788,&quot;maximumTerm&quot;:60,&quot;monthlyRate&quot;:1.1899,&quot;annualNominalMonthlyRate&quot;:0.142788,&quot;maximumAmount&quot;:29999999,&quot;fixedTermDepositRate&quot;:0,&quot;minimumAmount&quot;:12000000,&quot;effectiveAnnualRate&quot;:0.152513},{&quot;fixedTermDepositScore&quot;:0,&quot;rateType&quot;:&quot;F&quot;,&quot;minimumTerm&quot;:60,&quot;arrearsRate&quot;:0.162588,&quot;maximumTerm&quot;:60,&quot;monthlyRate&quot;:1.3549,&quot;annualNominalMonthlyRate&quot;:0.162588,&quot;maximumAmount&quot;:11999999,&quot;fixedTermDepositRate&quot;:0,&quot;minimumAmount&quot;:1000000,&quot;effectiveAnnualRate&quot;:0.175268},{&quot;fixedTermDepositScore&quot;:0,&quot;rateType&quot;:&quot;F&quot;,&quot;minimumTerm&quot;:48,&quot;arrearsRate&quot;:0.103788,&quot;maximumTerm&quot;:48,&quot;monthlyRate&quot;:0.8649,&quot;annualNominalMonthlyRate&quot;:0.103788,&quot;maximumAmount&quot;:300000000,&quot;fixedTermDepositRate&quot;:0,&quot;minimumAmount&quot;:300000000,&quot;effectiveAnnualRate&quot;:0.10887},{&quot;fixedTermDepositScore&quot;:0,&quot;rateType&quot;:&quot;F&quot;,&quot;minimumTerm&quot;:48,&quot;arrearsRate&quot;:0.108588,&quot;maximumTerm&quot;:48,&quot;monthlyRate&quot;:0.9049,&quot;annualNominalMonthlyRate&quot;:0.108588,&quot;maximumAmount&quot;:299999999,&quot;fixedTermDepositRate&quot;:0,&quot;minimumAmount&quot;:150000000,&quot;effectiveAnnualRate&quot;:0.114159},{&quot;fixedTermDepositScore&quot;:0,&quot;rateType&quot;:&quot;F&quot;,&quot;minimumTerm&quot;:48,&quot;arrearsRate&quot;:0.114588,&quot;maximumTerm&quot;:48,&quot;monthlyRate&quot;:0.9549,&quot;annualNominalMonthlyRate&quot;:0.114588,&quot;maximumAmount&quot;:149999999,&quot;fixedTermDepositRate&quot;:0,&quot;minimumAmount&quot;:60000000,&quot;effectiveAnnualRate&quot;:0.120802},{&quot;fixedTermDepositScore&quot;:0,&quot;rateType&quot;:&quot;F&quot;,&quot;minimumTerm&quot;:48,&quot;arrearsRate&quot;:0.123588,&quot;maximumTerm&quot;:48,&quot;monthlyRate&quot;:1.0299,&quot;annualNominalMonthlyRate&quot;:0.123588,&quot;maximumAmount&quot;:59999999,&quot;fixedTermDepositRate&quot;:0,&quot;minimumAmount&quot;:30000000,&quot;effectiveAnnualRate&quot;:0.130835},{&quot;fixedTermDepositScore&quot;:0,&quot;rateType&quot;:&quot;F&quot;,&quot;minimumTerm&quot;:48,&quot;arrearsRate&quot;:0.148788,&quot;maximumTerm&quot;:48,&quot;monthlyRate&quot;:1.2399,&quot;annualNominalMonthlyRate&quot;:0.148788,&quot;maximumAmount&quot;:29999999,&quot;fixedTermDepositRate&quot;:0,&quot;minimumAmount&quot;:12000000,&quot;effectiveAnnualRate&quot;:0.159366},{&quot;fixedTermDepositScore&quot;:0,&quot;rateType&quot;:&quot;F&quot;,&quot;minimumTerm&quot;:48,&quot;arrearsRate&quot;:0.168588,&quot;maximumTerm&quot;:48,&quot;monthlyRate&quot;:1.4049,&quot;annualNominalMonthlyRate&quot;:0.168588,&quot;maximumAmount&quot;:11999999,&quot;fixedTermDepositRate&quot;:0,&quot;minimumAmount&quot;:1000000,&quot;effectiveAnnualRate&quot;:0.182244},{&quot;fixedTermDepositScore&quot;:0,&quot;rateType&quot;:&quot;F&quot;,&quot;minimumTerm&quot;:36,&quot;arrearsRate&quot;:0.110413,&quot;maximumTerm&quot;:36,&quot;monthlyRate&quot;:0.920111,&quot;annualNominalMonthlyRate&quot;:0.110413,&quot;maximumAmount&quot;:300000000,&quot;fixedTermDepositRate&quot;:0,&quot;minimumAmount&quot;:300000000,&quot;effectiveAnnualRate&quot;:0.116176},{&quot;fixedTermDepositScore&quot;:0,&quot;rateType&quot;:&quot;F&quot;,&quot;minimumTerm&quot;:36,&quot;arrearsRate&quot;:0.115213,&quot;maximumTerm&quot;:36,&quot;monthlyRate&quot;:0.960111,&quot;annualNominalMonthlyRate&quot;:0.115213,&quot;maximumAmount&quot;:299999999,&quot;fixedTermDepositRate&quot;:0,&quot;minimumAmount&quot;:150000000,&quot;effectiveAnnualRate&quot;:0.121496},{&quot;fixedTermDepositScore&quot;:0,&quot;rateType&quot;:&quot;F&quot;,&quot;minimumTerm&quot;:36,&quot;arrearsRate&quot;:0.121213,&quot;maximumTerm&quot;:36,&quot;monthlyRate&quot;:1.010111,&quot;annualNominalMonthlyRate&quot;:0.121213,&quot;maximumAmount&quot;:149999999,&quot;fixedTermDepositRate&quot;:0,&quot;minimumAmount&quot;:60000000,&quot;effectiveAnnualRate&quot;:0.128179},{&quot;fixedTermDepositScore&quot;:0,&quot;rateType&quot;:&quot;F&quot;,&quot;minimumTerm&quot;:36,&quot;arrearsRate&quot;:0.134413,&quot;maximumTerm&quot;:36,&quot;monthlyRate&quot;:1.120111,&quot;annualNominalMonthlyRate&quot;:0.134413,&quot;maximumAmount&quot;:59999999,&quot;fixedTermDepositRate&quot;:0,&quot;minimumAmount&quot;:30000000,&quot;effectiveAnnualRate&quot;:0.143011},{&quot;fixedTermDepositScore&quot;:0,&quot;rateType&quot;:&quot;F&quot;,&quot;minimumTerm&quot;:36,&quot;arrearsRate&quot;:0.168133,&quot;maximumTerm&quot;:36,&quot;monthlyRate&quot;:1.401111,&quot;annualNominalMonthlyRate&quot;:0.168133,&quot;maximumAmount&quot;:29999999,&quot;fixedTermDepositRate&quot;:0,&quot;minimumAmount&quot;:12000000,&quot;effectiveAnnualRate&quot;:0.181714},{&quot;fixedTermDepositScore&quot;:0,&quot;rateType&quot;:&quot;F&quot;,&quot;minimumTerm&quot;:36,&quot;arrearsRate&quot;:0.183613,&quot;maximumTerm&quot;:36,&quot;monthlyRate&quot;:1.530111,&quot;annualNominalMonthlyRate&quot;:0.183613,&quot;maximumAmount&quot;:11999999,&quot;fixedTermDepositRate&quot;:0,&quot;minimumAmount&quot;:1000000,&quot;effectiveAnnualRate&quot;:0.199881}]}],&quot;header&quot;:{&quot;id&quot;:&quot;1&quot;,&quot;type&quot;:&quot;interestRateInternal&quot;}},&quot;meta&quot;:{&quot;_requestDateTime&quot;:&quot;2022-03-30T11:51:11.632Z&quot;,&quot;_applicationId&quot;:&quot;3395d54f-19b8-4918-99d0-8d9afd634ac4&quot;,&quot;_messageId&quot;:&quot;ce0b5865-24eb-4410-b6e8-75327d5554e1&quot;},&quot;links&quot;:{&quot;self&quot;:&quot;\/v1\/operations\/product-specific\/loans\/deposits\/consumer-loan\/interest-rate\/internal\/loanType\/interestRate&quot;}}
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.004</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-12">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-12" class="collapse collapsable-details">
+        <pre>11:53:15.189 [print] {
+  &quot;data&quot;: {
+    &quot;rateRange&quot;: [
+      {
+        &quot;loanType&quot;: &quot;PA5&quot;,
+        &quot;rangeType&quot;: [
+          {
+            &quot;fixedTermDepositScore&quot;: 0,
+            &quot;rateType&quot;: &quot;F&quot;,
+            &quot;minimumTerm&quot;: 60,
+            &quot;arrearsRate&quot;: 0.097788,
+            &quot;maximumTerm&quot;: 60,
+            &quot;monthlyRate&quot;: 0.8149,
+            &quot;annualNominalMonthlyRate&quot;: 0.097788,
+            &quot;maximumAmount&quot;: 300000000,
+            &quot;fixedTermDepositRate&quot;: 0,
+            &quot;minimumAmount&quot;: 300000000,
+            &quot;effectiveAnnualRate&quot;: 0.102292
+          },
+          {
+            &quot;fixedTermDepositScore&quot;: 0,
+            &quot;rateType&quot;: &quot;F&quot;,
+            &quot;minimumTerm&quot;: 60,
+            &quot;arrearsRate&quot;: 0.102588,
+            &quot;maximumTerm&quot;: 60,
+            &quot;monthlyRate&quot;: 0.8549,
+            &quot;annualNominalMonthlyRate&quot;: 0.102588,
+            &quot;maximumAmount&quot;: 299999999,
+            &quot;fixedTermDepositRate&quot;: 0,
+            &quot;minimumAmount&quot;: 150000000,
+            &quot;effectiveAnnualRate&quot;: 0.107552
+          },
+          {
+            &quot;fixedTermDepositScore&quot;: 0,
+            &quot;rateType&quot;: &quot;F&quot;,
+            &quot;minimumTerm&quot;: 60,
+            &quot;arrearsRate&quot;: 0.108588,
+            &quot;maximumTerm&quot;: 60,
+            &quot;monthlyRate&quot;: 0.9049,
+            &quot;annualNominalMonthlyRate&quot;: 0.108588,
+            &quot;maximumAmount&quot;: 149999999,
+            &quot;fixedTermDepositRate&quot;: 0,
+            &quot;minimumAmount&quot;: 60000000,
+            &quot;effectiveAnnualRate&quot;: 0.114159
+          },
+          {
+            &quot;fixedTermDepositScore&quot;: 0,
+            &quot;rateType&quot;: &quot;F&quot;,
+            &quot;minimumTerm&quot;: 60,
+            &quot;arrearsRate&quot;: 0.117588,
+            &quot;maximumTerm&quot;: 60,
+            &quot;monthlyRate&quot;: 0.9799,
+            &quot;annualNominalMonthlyRate&quot;: 0.117588,
+            &quot;maximumAmount&quot;: 59999999,
+            &quot;fixedTermDepositRate&quot;: 0,
+            &quot;minimumAmount&quot;: 30000000,
+            &quot;effectiveAnnualRate&quot;: 0.124137
+          },
+          {
+            &quot;fixedTermDepositScore&quot;: 0,
+            &quot;rateType&quot;: &quot;F&quot;,
+            &quot;minimumTerm&quot;: 60,
+            &quot;arrearsRate&quot;: 0.142788,
+            &quot;maximumTerm&quot;: 60,
+            &quot;monthlyRate&quot;: 1.1899,
+            &quot;annualNominalMonthlyRate&quot;: 0.142788,
+            &quot;maximumAmount&quot;: 29999999,
+            &quot;fixedTermDepositRate&quot;: 0,
+            &quot;minimumAmount&quot;: 12000000,
+            &quot;effectiveAnnualRate&quot;: 0.152513
+          },
+          {
+            &quot;fixedTermDepositScore&quot;: 0,
+            &quot;rateType&quot;: &quot;F&quot;,
+            &quot;minimumTerm&quot;: 60,
+            &quot;arrearsRate&quot;: 0.162588,
+            &quot;maximumTerm&quot;: 60,
+            &quot;monthlyRate&quot;: 1.3549,
+            &quot;annualNominalMonthlyRate&quot;: 0.162588,
+            &quot;maximumAmount&quot;: 11999999,
+            &quot;fixedTermDepositRate&quot;: 0,
+            &quot;minimumAmount&quot;: 1000000,
+            &quot;effectiveAnnualRate&quot;: 0.175268
+          },
+          {
+            &quot;fixedTermDepositScore&quot;: 0,
+            &quot;rateType&quot;: &quot;F&quot;,
+            &quot;minimumTerm&quot;: 48,
+            &quot;arrearsRate&quot;: 0.103788,
+            &quot;maximumTerm&quot;: 48,
+            &quot;monthlyRate&quot;: 0.8649,
+            &quot;annualNominalMonthlyRate&quot;: 0.103788,
+            &quot;maximumAmount&quot;: 300000000,
+            &quot;fixedTermDepositRate&quot;: 0,
+            &quot;minimumAmount&quot;: 300000000,
+            &quot;effectiveAnnualRate&quot;: 0.10887
+          },
+          {
+            &quot;fixedTermDepositScore&quot;: 0,
+            &quot;rateType&quot;: &quot;F&quot;,
+            &quot;minimumTerm&quot;: 48,
+            &quot;arrearsRate&quot;: 0.108588,
+            &quot;maximumTerm&quot;: 48,
+            &quot;monthlyRate&quot;: 0.9049,
+            &quot;annualNominalMonthlyRate&quot;: 0.108588,
+            &quot;maximumAmount&quot;: 299999999,
+            &quot;fixedTermDepositRate&quot;: 0,
+            &quot;minimumAmount&quot;: 150000000,
+            &quot;effectiveAnnualRate&quot;: 0.114159
+          },
+          {
+            &quot;fixedTermDepositScore&quot;: 0,
+            &quot;rateType&quot;: &quot;F&quot;,
+            &quot;minimumTerm&quot;: 48,
+            &quot;arrearsRate&quot;: 0.114588,
+            &quot;maximumTerm&quot;: 48,
+            &quot;monthlyRate&quot;: 0.9549,
+            &quot;annualNominalMonthlyRate&quot;: 0.114588,
+            &quot;maximumAmount&quot;: 149999999,
+            &quot;fixedTermDepositRate&quot;: 0,
+            &quot;minimumAmount&quot;: 60000000,
+            &quot;effectiveAnnualRate&quot;: 0.120802
+          },
+          {
+            &quot;fixedTermDepositScore&quot;: 0,
+            &quot;rateType&quot;: &quot;F&quot;,
+            &quot;minimumTerm&quot;: 48,
+            &quot;arrearsRate&quot;: 0.123588,
+            &quot;maximumTerm&quot;: 48,
+            &quot;monthlyRate&quot;: 1.0299,
+            &quot;annualNominalMonthlyRate&quot;: 0.123588,
+            &quot;maximumAmount&quot;: 59999999,
+            &quot;fixedTermDepositRate&quot;: 0,
+            &quot;minimumAmount&quot;: 30000000,
+            &quot;effectiveAnnualRate&quot;: 0.130835
+          },
+          {
+            &quot;fixedTermDepositScore&quot;: 0,
+            &quot;rateType&quot;: &quot;F&quot;,
+            &quot;minimumTerm&quot;: 48,
+            &quot;arrearsRate&quot;: 0.148788,
+            &quot;maximumTerm&quot;: 48,
+            &quot;monthlyRate&quot;: 1.2399,
+            &quot;annualNominalMonthlyRate&quot;: 0.148788,
+            &quot;maximumAmount&quot;: 29999999,
+            &quot;fixedTermDepositRate&quot;: 0,
+            &quot;minimumAmount&quot;: 12000000,
+            &quot;effectiveAnnualRate&quot;: 0.159366
+          },
+          {
+            &quot;fixedTermDepositScore&quot;: 0,
+            &quot;rateType&quot;: &quot;F&quot;,
+            &quot;minimumTerm&quot;: 48,
+            &quot;arrearsRate&quot;: 0.168588,
+            &quot;maximumTerm&quot;: 48,
+            &quot;monthlyRate&quot;: 1.4049,
+            &quot;annualNominalMonthlyRate&quot;: 0.168588,
+            &quot;maximumAmount&quot;: 11999999,
+            &quot;fixedTermDepositRate&quot;: 0,
+            &quot;minimumAmount&quot;: 1000000,
+            &quot;effectiveAnnualRate&quot;: 0.182244
+          },
+          {
+            &quot;fixedTermDepositScore&quot;: 0,
+            &quot;rateType&quot;: &quot;F&quot;,
+            &quot;minimumTerm&quot;: 36,
+            &quot;arrearsRate&quot;: 0.110413,
+            &quot;maximumTerm&quot;: 36,
+            &quot;monthlyRate&quot;: 0.920111,
+            &quot;annualNominalMonthlyRate&quot;: 0.110413,
+            &quot;maximumAmount&quot;: 300000000,
+            &quot;fixedTermDepositRate&quot;: 0,
+            &quot;minimumAmount&quot;: 300000000,
+            &quot;effectiveAnnualRate&quot;: 0.116176
+          },
+          {
+            &quot;fixedTermDepositScore&quot;: 0,
+            &quot;rateType&quot;: &quot;F&quot;,
+            &quot;minimumTerm&quot;: 36,
+            &quot;arrearsRate&quot;: 0.115213,
+            &quot;maximumTerm&quot;: 36,
+            &quot;monthlyRate&quot;: 0.960111,
+            &quot;annualNominalMonthlyRate&quot;: 0.115213,
+            &quot;maximumAmount&quot;: 299999999,
+            &quot;fixedTermDepositRate&quot;: 0,
+            &quot;minimumAmount&quot;: 150000000,
+            &quot;effectiveAnnualRate&quot;: 0.121496
+          },
+          {
+            &quot;fixedTermDepositScore&quot;: 0,
+            &quot;rateType&quot;: &quot;F&quot;,
+            &quot;minimumTerm&quot;: 36,
+            &quot;arrearsRate&quot;: 0.121213,
+            &quot;maximumTerm&quot;: 36,
+            &quot;monthlyRate&quot;: 1.010111,
+            &quot;annualNominalMonthlyRate&quot;: 0.121213,
+            &quot;maximumAmount&quot;: 149999999,
+            &quot;fixedTermDepositRate&quot;: 0,
+            &quot;minimumAmount&quot;: 60000000,
+            &quot;effectiveAnnualRate&quot;: 0.128179
+          },
+          {
+            &quot;fixedTermDepositScore&quot;: 0,
+            &quot;rateType&quot;: &quot;F&quot;,
+            &quot;minimumTerm&quot;: 36,
+            &quot;arrearsRate&quot;: 0.134413,
+            &quot;maximumTerm&quot;: 36,
+            &quot;monthlyRate&quot;: 1.120111,
+            &quot;annualNominalMonthlyRate&quot;: 0.134413,
+            &quot;maximumAmount&quot;: 59999999,
+            &quot;fixedTermDepositRate&quot;: 0,
+            &quot;minimumAmount&quot;: 30000000,
+            &quot;effectiveAnnualRate&quot;: 0.143011
+          },
+          {
+            &quot;fixedTermDepositScore&quot;: 0,
+            &quot;rateType&quot;: &quot;F&quot;,
+            &quot;minimumTerm&quot;: 36,
+            &quot;arrearsRate&quot;: 0.168133,
+            &quot;maximumTerm&quot;: 36,
+            &quot;monthlyRate&quot;: 1.401111,
+            &quot;annualNominalMonthlyRate&quot;: 0.168133,
+            &quot;maximumAmount&quot;: 29999999,
+            &quot;fixedTermDepositRate&quot;: 0,
+            &quot;minimumAmount&quot;: 12000000,
+            &quot;effectiveAnnualRate&quot;: 0.181714
+          },
+          {
+            &quot;fixedTermDepositScore&quot;: 0,
+            &quot;rateType&quot;: &quot;F&quot;,
+            &quot;minimumTerm&quot;: 36,
+            &quot;arrearsRate&quot;: 0.183613,
+            &quot;maximumTerm&quot;: 36,
+            &quot;monthlyRate&quot;: 1.530111,
+            &quot;annualNominalMonthlyRate&quot;: 0.183613,
+            &quot;maximumAmount&quot;: 11999999,
+            &quot;fixedTermDepositRate&quot;: 0,
+            &quot;minimumAmount&quot;: 1000000,
+            &quot;effectiveAnnualRate&quot;: 0.199881
+          }
+        ]
+      }
+    ],
+    &quot;header&quot;: {
+      &quot;id&quot;: &quot;1&quot;,
+      &quot;type&quot;: &quot;interestRateInternal&quot;
+    }
+  },
+  &quot;meta&quot;: {
+    &quot;_requestDateTime&quot;: &quot;2022-03-30T11:51:11.632Z&quot;,
+    &quot;_applicationId&quot;: &quot;3395d54f-19b8-4918-99d0-8d9afd634ac4&quot;,
+    &quot;_messageId&quot;: &quot;ce0b5865-24eb-4410-b6e8-75327d5554e1&quot;
+  },
+  &quot;links&quot;: {
+    &quot;self&quot;: &quot;/v1/operations/product-specific/loans/deposits/consumer-loan/interest-rate/internal/loanType/interestRate&quot;
+  }
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">response.status= 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br/>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

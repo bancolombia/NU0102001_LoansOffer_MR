@@ -1,0 +1,7141 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports  - Feature: co/com/bancolombia/acceptancetest/feautures/utilities_retrieve.feature</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>AcceptanceTest</td>
+      <td>26 Jan 2022, 19:11</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Feature Report</h2>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+
+<thead>
+  <tr class="header dont-sort">
+      <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Feature</th>
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">co/com/bancolombia/acceptancetest/feautures/utilities_retrieve.feature</td>
+          <td      class="passed"    >182</td>
+          <td      class="failed"    >4</td>
+          <td     class="skipped"   >4</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">190</td>
+
+          <td >0</td>
+          <td  class="failed"    >4</td>
+          <td class="total">4</td>
+
+          <td class="duration" data-value="275438311400">4:35.438</td>
+          <td class="failed">Failed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="feature">
+
+<div class="tags indention">
+</div>
+
+
+<div class="brief failed">
+  <span class="keyword indention">Feature</span>
+  <span class="name">co/com/bancolombia/acceptancetest/feautures/utilities_retrieve.feature</span>
+
+
+</div>
+
+        <div class="description indention">Validate that API Utilities returns correct information</div>
+
+        <div class="elements inner-level">
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">46.983</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">configure logPrettyResponse = true</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">configure ssl = true</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">configure retry = { count: 3, interval: 3000 }</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def req_header = {message-id:'ce0b5865-24eb-4410-b6e8-75327d5554e1',id: '0b04f601-1120-4077-869b-0b6584cc08f0', deviceId: '1', token: '42d1b5d1-b650-4c3a-881a-dbd3df4df765', timestamp: '21-04-2021', consumer: 'APP', Content-Type:'application/vnd.bancolombia.v1+json',X-IBM-Client-Id:'3395d54f-19b8-4918-99d0-8d9afd634ac4', X-IBM-Client-Secret:'K6sR2tM2cS1xM6sY1pJ1uQ6cI3yA2eI7vV0oU3lX7kT0vH8eB0'}</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def snippet_P59 = call read('snippet_interestrate.feature@P59')</span>
+
+  <span class="lead-duration duration">7.763</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name- passed">
+  <span class="keyword indention"></span>
+  <span class="name">co/com/bancolombia/acceptancetest/feautures/snippet_interestrate.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">configure logPrettyResponse = true</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">configure ssl = true</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">configure retry = { count: 3, interval: 3000 }</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def req_header = {message-id:'ce0b5865-24eb-4410-b6e8-75327d5554e1',id: '0b04f601-1120-4077-869b-0b6584cc08f0', deviceId: '1', token: '42d1b5d1-b650-4c3a-881a-dbd3df4df765', timestamp: '21-04-2021', consumer: 'APP', Content-Type:'application/vnd.bancolombia.v1+json',X-IBM-Client-Id:'3395d54f-19b8-4918-99d0-8d9afd634ac4', X-IBM-Client-Secret:'K6sR2tM2cS1xM6sY1pJ1uQ6cI3yA2eI7vV0oU3lX7kT0vH8eB0'}</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details">
+        <pre>19:08:54.676 over-writing existing variable 'req_header' with new value: {message-id:'ce0b5865-24eb-4410-b6e8-75327d5554e1',id: '0b04f601-1120-4077-869b-0b6584cc08f0', deviceId: '1', token: '42d1b5d1-b650-4c3a-881a-dbd3df4df765', timestamp: '21-04-2021', consumer: 'APP', Content-Type:'application/vnd.bancolombia.v1+json',X-IBM-Client-Id:'3395d54f-19b8-4918-99d0-8d9afd634ac4', X-IBM-Client-Secret:'K6sR2tM2cS1xM6sY1pJ1uQ6cI3yA2eI7vV0oU3lX7kT0vH8eB0'}
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">headers req_header</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">url 'https://api-aws-qa.apps.ambientesbc.com/int/testing/v1/operations/product-specific/loans/deposits/consumer-loan/interest-rate/internal/loanType/interestRate'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">request {&quot;data&quot;: {&quot;customerSegment&quot;: &quot;S2&quot;,&quot;customerRelaibility&quot;: &quot;G1&quot;,&quot;fixedRateLoans&quot;: [{&quot;fixedRateLoanId&quot;: &quot;P59&quot;}],&quot;variableRateLoans&quot;: [{&quot;variableRateLoanType&quot;: &quot;P59&quot;}],&quot;amount&quot;: 10000000,&quot;loanTerm&quot;: 24}}</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; When passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">method POST</span>
+
+  <span class="lead-duration duration">7.754</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-4">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-4" class="collapse collapsable-details">
+        <pre>19:08:54.678 request:
+1 &gt; POST https://api-aws-qa.apps.ambientesbc.com/int/testing/v1/operations/product-specific/loans/deposits/consumer-loan/interest-rate/internal/loanType/interestRate
+1 &gt; message-id: ce0b5865-24eb-4410-b6e8-75327d5554e1
+1 &gt; id: 0b04f601-1120-4077-869b-0b6584cc08f0
+1 &gt; deviceId: 1
+1 &gt; token: 42d1b5d1-b650-4c3a-881a-dbd3df4df765
+1 &gt; timestamp: 21-04-2021
+1 &gt; consumer: APP
+1 &gt; Content-Type: application/vnd.bancolombia.v1+json; charset=UTF-8
+1 &gt; X-IBM-Client-Id: 3395d54f-19b8-4918-99d0-8d9afd634ac4
+1 &gt; X-IBM-Client-Secret: K6sR2tM2cS1xM6sY1pJ1uQ6cI3yA2eI7vV0oU3lX7kT0vH8eB0
+1 &gt; Content-Length: 190
+1 &gt; Host: api-aws-qa.apps.ambientesbc.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_281)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;data&quot;:{&quot;variableRateLoans&quot;:[{&quot;variableRateLoanType&quot;:&quot;P59&quot;}],&quot;amount&quot;:10000000,&quot;loanTerm&quot;:24,&quot;customerSegment&quot;:&quot;S2&quot;,&quot;fixedRateLoans&quot;:[{&quot;fixedRateLoanId&quot;:&quot;P59&quot;}],&quot;customerRelaibility&quot;:&quot;G1&quot;}}
+
+19:09:02.432 response time in milliseconds: 7754
+1 &lt; 504
+1 &lt; X-Backside-Transport: OK OK
+1 &lt; Connection: Keep-Alive
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Content-Type: application/vnd.bancolombia.v4+json; charset=utf-8
+1 &lt; API-Version: 1.0.0
+1 &lt; RateLimit-Limit: 100/hour
+1 &lt; Message-id: ce0b5865-24eb-4410-b6e8-75327d5554e1
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains
+1 &lt; X-Frame-Options: DENY
+1 &lt; Cache-Control: private, no-cache, no-store, max-age=0, no-transform
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; Content-Security-Policy: default-src 'self' *.bancolombia.com
+{&quot;meta&quot;:{&quot;_requestDateTime&quot;:&quot;2022-01-26T19:09:03.950Z&quot;,&quot;_applicationId&quot;:&quot;3395d54f-19b8-4918-99d0-8d9afd634ac4&quot;,&quot;_messageId&quot;:&quot;ce0b5865-24eb-4410-b6e8-75327d5554e1&quot;},&quot;title&quot;:&quot;Gateway Timeout&quot;,&quot;errors&quot;:[{&quot;code&quot;:&quot;SA504&quot;,&quot;detail&quot;:&quot;Tiempo de respuesta del proveedor del servicio excedido&quot;}],&quot;status&quot;:504}
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-5">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-5" class="collapse collapsable-details">
+        <pre>19:09:02.433 [print] {
+  &quot;meta&quot;: {
+    &quot;_requestDateTime&quot;: &quot;2022-01-26T19:09:03.950Z&quot;,
+    &quot;_applicationId&quot;: &quot;3395d54f-19b8-4918-99d0-8d9afd634ac4&quot;,
+    &quot;_messageId&quot;: &quot;ce0b5865-24eb-4410-b6e8-75327d5554e1&quot;
+  },
+  &quot;title&quot;: &quot;Gateway Timeout&quot;,
+  &quot;errors&quot;: [
+    {
+      &quot;code&quot;: &quot;SA504&quot;,
+      &quot;detail&quot;: &quot;Tiempo de respuesta del proveedor del servicio excedido&quot;
+    }
+  ],
+  &quot;status&quot;: 504
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Then passed">
+  <span class="keyword indention">&gt; Then</span>
+  <span class="name">response.status= 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def snippet_PA5 = call read('snippet_interestrate.feature@PA5')</span>
+
+  <span class="lead-duration duration">7.769</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name- passed">
+  <span class="keyword indention"></span>
+  <span class="name">co/com/bancolombia/acceptancetest/feautures/snippet_interestrate.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">configure logPrettyResponse = true</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">configure ssl = true</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">configure retry = { count: 3, interval: 3000 }</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def req_header = {message-id:'ce0b5865-24eb-4410-b6e8-75327d5554e1',id: '0b04f601-1120-4077-869b-0b6584cc08f0', deviceId: '1', token: '42d1b5d1-b650-4c3a-881a-dbd3df4df765', timestamp: '21-04-2021', consumer: 'APP', Content-Type:'application/vnd.bancolombia.v1+json',X-IBM-Client-Id:'3395d54f-19b8-4918-99d0-8d9afd634ac4', X-IBM-Client-Secret:'K6sR2tM2cS1xM6sY1pJ1uQ6cI3yA2eI7vV0oU3lX7kT0vH8eB0'}</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-6">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-6" class="collapse collapsable-details">
+        <pre>19:09:02.439 over-writing existing variable 'req_header' with new value: {message-id:'ce0b5865-24eb-4410-b6e8-75327d5554e1',id: '0b04f601-1120-4077-869b-0b6584cc08f0', deviceId: '1', token: '42d1b5d1-b650-4c3a-881a-dbd3df4df765', timestamp: '21-04-2021', consumer: 'APP', Content-Type:'application/vnd.bancolombia.v1+json',X-IBM-Client-Id:'3395d54f-19b8-4918-99d0-8d9afd634ac4', X-IBM-Client-Secret:'K6sR2tM2cS1xM6sY1pJ1uQ6cI3yA2eI7vV0oU3lX7kT0vH8eB0'}
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">headers req_header</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">url 'https://api-aws-qa.apps.ambientesbc.com/int/testing/v1/operations/product-specific/loans/deposits/consumer-loan/interest-rate/internal/loanType/interestRate'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">request {&quot;data&quot;: {&quot;customerSegment&quot;: &quot;S2&quot;,&quot;customerRelaibility&quot;: &quot;G1&quot;,&quot;fixedRateLoans&quot;: [{&quot;fixedRateLoanId&quot;: &quot;PA5&quot;}],&quot;variableRateLoans&quot;: [{&quot;variableRateLoanType&quot;: &quot;PA5&quot;}],&quot;amount&quot;: 10000000,&quot;loanTerm&quot;: 24}}</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; When passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">method POST</span>
+
+  <span class="lead-duration duration">7.764</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-7">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-7" class="collapse collapsable-details">
+        <pre>19:09:02.441 request:
+1 &gt; POST https://api-aws-qa.apps.ambientesbc.com/int/testing/v1/operations/product-specific/loans/deposits/consumer-loan/interest-rate/internal/loanType/interestRate
+1 &gt; message-id: ce0b5865-24eb-4410-b6e8-75327d5554e1
+1 &gt; id: 0b04f601-1120-4077-869b-0b6584cc08f0
+1 &gt; deviceId: 1
+1 &gt; token: 42d1b5d1-b650-4c3a-881a-dbd3df4df765
+1 &gt; timestamp: 21-04-2021
+1 &gt; consumer: APP
+1 &gt; Content-Type: application/vnd.bancolombia.v1+json; charset=UTF-8
+1 &gt; X-IBM-Client-Id: 3395d54f-19b8-4918-99d0-8d9afd634ac4
+1 &gt; X-IBM-Client-Secret: K6sR2tM2cS1xM6sY1pJ1uQ6cI3yA2eI7vV0oU3lX7kT0vH8eB0
+1 &gt; Content-Length: 190
+1 &gt; Host: api-aws-qa.apps.ambientesbc.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_281)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;data&quot;:{&quot;variableRateLoans&quot;:[{&quot;variableRateLoanType&quot;:&quot;PA5&quot;}],&quot;amount&quot;:10000000,&quot;loanTerm&quot;:24,&quot;customerSegment&quot;:&quot;S2&quot;,&quot;fixedRateLoans&quot;:[{&quot;fixedRateLoanId&quot;:&quot;PA5&quot;}],&quot;customerRelaibility&quot;:&quot;G1&quot;}}
+
+19:09:10.202 response time in milliseconds: 7761
+1 &lt; 504
+1 &lt; X-Backside-Transport: OK OK
+1 &lt; Connection: Keep-Alive
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Content-Type: application/vnd.bancolombia.v4+json; charset=utf-8
+1 &lt; API-Version: 1.0.0
+1 &lt; RateLimit-Limit: 100/hour
+1 &lt; Message-id: ce0b5865-24eb-4410-b6e8-75327d5554e1
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains
+1 &lt; X-Frame-Options: DENY
+1 &lt; Cache-Control: private, no-cache, no-store, max-age=0, no-transform
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; Content-Security-Policy: default-src 'self' *.bancolombia.com
+{&quot;meta&quot;:{&quot;_requestDateTime&quot;:&quot;2022-01-26T19:09:11.706Z&quot;,&quot;_applicationId&quot;:&quot;3395d54f-19b8-4918-99d0-8d9afd634ac4&quot;,&quot;_messageId&quot;:&quot;ce0b5865-24eb-4410-b6e8-75327d5554e1&quot;},&quot;title&quot;:&quot;Gateway Timeout&quot;,&quot;errors&quot;:[{&quot;code&quot;:&quot;SA504&quot;,&quot;detail&quot;:&quot;Tiempo de respuesta del proveedor del servicio excedido&quot;}],&quot;status&quot;:504}
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-8">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-8" class="collapse collapsable-details">
+        <pre>19:09:10.203 [print] {
+  &quot;meta&quot;: {
+    &quot;_requestDateTime&quot;: &quot;2022-01-26T19:09:11.706Z&quot;,
+    &quot;_applicationId&quot;: &quot;3395d54f-19b8-4918-99d0-8d9afd634ac4&quot;,
+    &quot;_messageId&quot;: &quot;ce0b5865-24eb-4410-b6e8-75327d5554e1&quot;
+  },
+  &quot;title&quot;: &quot;Gateway Timeout&quot;,
+  &quot;errors&quot;: [
+    {
+      &quot;code&quot;: &quot;SA504&quot;,
+      &quot;detail&quot;: &quot;Tiempo de respuesta del proveedor del servicio excedido&quot;
+    }
+  ],
+  &quot;status&quot;: 504
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Then passed">
+  <span class="keyword indention">&gt; Then</span>
+  <span class="name">response.status= 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def snippet = call read('snippet_interestrate.feature@P59')</span>
+
+  <span class="lead-duration duration">7.965</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name- passed">
+  <span class="keyword indention"></span>
+  <span class="name">co/com/bancolombia/acceptancetest/feautures/snippet_interestrate.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">configure logPrettyResponse = true</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">configure ssl = true</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">configure retry = { count: 3, interval: 3000 }</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def req_header = {message-id:'ce0b5865-24eb-4410-b6e8-75327d5554e1',id: '0b04f601-1120-4077-869b-0b6584cc08f0', deviceId: '1', token: '42d1b5d1-b650-4c3a-881a-dbd3df4df765', timestamp: '21-04-2021', consumer: 'APP', Content-Type:'application/vnd.bancolombia.v1+json',X-IBM-Client-Id:'3395d54f-19b8-4918-99d0-8d9afd634ac4', X-IBM-Client-Secret:'K6sR2tM2cS1xM6sY1pJ1uQ6cI3yA2eI7vV0oU3lX7kT0vH8eB0'}</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-9">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-9" class="collapse collapsable-details">
+        <pre>19:09:10.208 over-writing existing variable 'req_header' with new value: {message-id:'ce0b5865-24eb-4410-b6e8-75327d5554e1',id: '0b04f601-1120-4077-869b-0b6584cc08f0', deviceId: '1', token: '42d1b5d1-b650-4c3a-881a-dbd3df4df765', timestamp: '21-04-2021', consumer: 'APP', Content-Type:'application/vnd.bancolombia.v1+json',X-IBM-Client-Id:'3395d54f-19b8-4918-99d0-8d9afd634ac4', X-IBM-Client-Secret:'K6sR2tM2cS1xM6sY1pJ1uQ6cI3yA2eI7vV0oU3lX7kT0vH8eB0'}
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">headers req_header</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">url 'https://api-aws-qa.apps.ambientesbc.com/int/testing/v1/operations/product-specific/loans/deposits/consumer-loan/interest-rate/internal/loanType/interestRate'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">request {&quot;data&quot;: {&quot;customerSegment&quot;: &quot;S2&quot;,&quot;customerRelaibility&quot;: &quot;G1&quot;,&quot;fixedRateLoans&quot;: [{&quot;fixedRateLoanId&quot;: &quot;P59&quot;}],&quot;variableRateLoans&quot;: [{&quot;variableRateLoanType&quot;: &quot;P59&quot;}],&quot;amount&quot;: 10000000,&quot;loanTerm&quot;: 24}}</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; When passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">method POST</span>
+
+  <span class="lead-duration duration">7.959</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-10">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-10" class="collapse collapsable-details">
+        <pre>19:09:10.209 request:
+1 &gt; POST https://api-aws-qa.apps.ambientesbc.com/int/testing/v1/operations/product-specific/loans/deposits/consumer-loan/interest-rate/internal/loanType/interestRate
+1 &gt; message-id: ce0b5865-24eb-4410-b6e8-75327d5554e1
+1 &gt; id: 0b04f601-1120-4077-869b-0b6584cc08f0
+1 &gt; deviceId: 1
+1 &gt; token: 42d1b5d1-b650-4c3a-881a-dbd3df4df765
+1 &gt; timestamp: 21-04-2021
+1 &gt; consumer: APP
+1 &gt; Content-Type: application/vnd.bancolombia.v1+json; charset=UTF-8
+1 &gt; X-IBM-Client-Id: 3395d54f-19b8-4918-99d0-8d9afd634ac4
+1 &gt; X-IBM-Client-Secret: K6sR2tM2cS1xM6sY1pJ1uQ6cI3yA2eI7vV0oU3lX7kT0vH8eB0
+1 &gt; Content-Length: 190
+1 &gt; Host: api-aws-qa.apps.ambientesbc.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_281)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;data&quot;:{&quot;variableRateLoans&quot;:[{&quot;variableRateLoanType&quot;:&quot;P59&quot;}],&quot;amount&quot;:10000000,&quot;loanTerm&quot;:24,&quot;customerSegment&quot;:&quot;S2&quot;,&quot;fixedRateLoans&quot;:[{&quot;fixedRateLoanId&quot;:&quot;P59&quot;}],&quot;customerRelaibility&quot;:&quot;G1&quot;}}
+
+19:09:18.167 response time in milliseconds: 7958
+1 &lt; 504
+1 &lt; X-Backside-Transport: OK OK
+1 &lt; Connection: Keep-Alive
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Content-Type: application/vnd.bancolombia.v4+json; charset=utf-8
+1 &lt; API-Version: 1.0.0
+1 &lt; RateLimit-Limit: 100/hour
+1 &lt; Message-id: ce0b5865-24eb-4410-b6e8-75327d5554e1
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains
+1 &lt; X-Frame-Options: DENY
+1 &lt; Cache-Control: private, no-cache, no-store, max-age=0, no-transform
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; Content-Security-Policy: default-src 'self' *.bancolombia.com
+{&quot;meta&quot;:{&quot;_requestDateTime&quot;:&quot;2022-01-26T19:09:19.539Z&quot;,&quot;_applicationId&quot;:&quot;3395d54f-19b8-4918-99d0-8d9afd634ac4&quot;,&quot;_messageId&quot;:&quot;ce0b5865-24eb-4410-b6e8-75327d5554e1&quot;},&quot;title&quot;:&quot;Gateway Timeout&quot;,&quot;errors&quot;:[{&quot;code&quot;:&quot;SA504&quot;,&quot;detail&quot;:&quot;Tiempo de respuesta del proveedor del servicio excedido&quot;}],&quot;status&quot;:504}
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-11">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-11" class="collapse collapsable-details">
+        <pre>19:09:18.168 [print] {
+  &quot;meta&quot;: {
+    &quot;_requestDateTime&quot;: &quot;2022-01-26T19:09:19.539Z&quot;,
+    &quot;_applicationId&quot;: &quot;3395d54f-19b8-4918-99d0-8d9afd634ac4&quot;,
+    &quot;_messageId&quot;: &quot;ce0b5865-24eb-4410-b6e8-75327d5554e1&quot;
+  },
+  &quot;title&quot;: &quot;Gateway Timeout&quot;,
+  &quot;errors&quot;: [
+    {
+      &quot;code&quot;: &quot;SA504&quot;,
+      &quot;detail&quot;: &quot;Tiempo de respuesta del proveedor del servicio excedido&quot;
+    }
+  ],
+  &quot;status&quot;: 504
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Then passed">
+  <span class="keyword indention">&gt; Then</span>
+  <span class="name">response.status= 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">21.851</span>
+
+
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-12">
+
+<div class="brief failed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Validate that the API returns all fields when the plan is PA5</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-12" class="collapse collapsable-details  in ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-13">
+
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-13" class="inner-level collapse collapsable-details  in ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">headers req_header</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">url 'https://financiacion-int-qa.apps.ambientesbc.com/loans-offer/utilities/api/v1/retrieve'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request {&quot;data&quot;: {&quot;customerId&quot;: {&quot;idType&quot;: &quot;CC&quot;,&quot;idNumber&quot;: &quot;2101068007&quot;,&quot;companyIdType&quot;: &quot;NIT&quot;,&quot;companyIdNumber&quot;: &quot;45678945&quot;,&quot;customerReliability&quot;: &quot;G1&quot;},&quot;offer&quot;: {&quot;productId&quot;: &quot;1&quot;,&quot;amount&quot;: 10000000,&quot;interestRateType&quot; : &quot;F&quot;,&quot;term&quot;: 36,&quot;insurances&quot;: [{&quot;type&quot;: &quot;SD&quot;}]}}}</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method POST</span>
+
+  <span class="lead-duration duration">21.850</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-14">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-14" class="collapse collapsable-details">
+        <pre>19:09:18.171 request:
+1 &gt; POST https://financiacion-int-qa.apps.ambientesbc.com/loans-offer/utilities/api/v1/retrieve
+1 &gt; message-id: ce0b5865-24eb-4410-b6e8-75327d5554e1
+1 &gt; id: 0b04f601-1120-4077-869b-0b6584cc08f0
+1 &gt; deviceId: 1
+1 &gt; token: 42d1b5d1-b650-4c3a-881a-dbd3df4df765
+1 &gt; timestamp: 21-04-2021
+1 &gt; consumer: APP
+1 &gt; Content-Type: application/vnd.bancolombia.v1+json; charset=UTF-8
+1 &gt; X-IBM-Client-Id: 3395d54f-19b8-4918-99d0-8d9afd634ac4
+1 &gt; X-IBM-Client-Secret: K6sR2tM2cS1xM6sY1pJ1uQ6cI3yA2eI7vV0oU3lX7kT0vH8eB0
+1 &gt; Content-Length: 247
+1 &gt; Host: financiacion-int-qa.apps.ambientesbc.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_281)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;data&quot;:{&quot;offer&quot;:{&quot;amount&quot;:10000000,&quot;insurances&quot;:[{&quot;type&quot;:&quot;SD&quot;}],&quot;productId&quot;:&quot;1&quot;,&quot;term&quot;:36,&quot;interestRateType&quot;:&quot;F&quot;},&quot;customerId&quot;:{&quot;customerReliability&quot;:&quot;G1&quot;,&quot;companyIdType&quot;:&quot;NIT&quot;,&quot;idType&quot;:&quot;CC&quot;,&quot;companyIdNumber&quot;:&quot;45678945&quot;,&quot;idNumber&quot;:&quot;2101068007&quot;}}}
+
+19:09:40.019 response time in milliseconds: 21848
+1 &lt; 500
+1 &lt; Date: Thu, 27 Jan 2022 00:09:48 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 57
+1 &lt; Connection: keep-alive
+1 &lt; strict-transport-security: max-age=31536000; includeSubDomains
+1 &lt; content-security-policy: default-src https:
+1 &lt; x-content-type-options: nosniff
+1 &lt; x-frame-options: DENY
+1 &lt; x-xss-protection: 1; mode=block
+1 &lt; cache-control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; pragma: no-cache
+1 &lt; referrer-policy: no-referrer
+1 &lt; x-envoy-upstream-service-time: 21263
+1 &lt; server: undefined
+{&quot;errors&quot;:[{&quot;code&quot;:&quot;LI012&quot;,&quot;detail&quot;:&quot;Map server error&quot;}]}
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">response.status=200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And failed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response == {&quot;data&quot;:{&quot;installmentsData&quot;:{&quot;interestRate&quot;:#null,&quot;insurances&quot;:[{&quot;amount&quot;:#number,&quot;type&quot;:#string},{&quot;amount&quot;:#number,&quot;type&quot;:#string}],&quot;variableInterestRateAdditionalPoints&quot;:#number,&quot;arreasInterestRate&quot;:#number,&quot;interestRateType&quot;:#string,&quot;nominalAnnualInterestRate&quot;:#number,&quot;availabilityHandlingFee&quot;:#null,&quot;amortisationSchedule&quot;:#null,&quot;paymentDay&quot;:#null,&quot;effectiveAnnualInterestRate&quot;:#number,&quot;installment&quot;:#number,&quot;fng&quot;:#null,&quot;monthOverdueInterestRate&quot;:#number,&quot;expirationDate&quot;:#null},&quot;customerId&quot;:{&quot;customerReliability&quot;:#string,&quot;companyIdType&quot;:#string,&quot;idType&quot;:#string,&quot;companyIdNumber&quot;:#string,&quot;idNumber&quot;:#string}},&quot;status&quot;:#present}</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-15">
+          <a>match</a>
+      </div>
+      <div id="msg-15" class="collapse collapsable-details  in ">
+        <pre>match failed: EQUALS
+  $ | not equal | actual does not contain key - 'data' (MAP:MAP)
+  {&quot;errors&quot;:[{&quot;code&quot;:&quot;LI012&quot;,&quot;detail&quot;:&quot;Map server error&quot;}],&quot;status&quot;:200}
+  {&quot;status&quot;:&quot;#present&quot;,&quot;data&quot;:{&quot;installmentsData&quot;:{&quot;interestRate&quot;:&quot;#null&quot;,&quot;insurances&quot;:[{&quot;amount&quot;:&quot;#number&quot;,&quot;type&quot;:&quot;#string&quot;},{&quot;amount&quot;:&quot;#number&quot;,&quot;type&quot;:&quot;#string&quot;}],&quot;variableInterestRateAdditionalPoints&quot;:&quot;#number&quot;,&quot;arreasInterestRate&quot;:&quot;#number&quot;,&quot;interestRateType&quot;:&quot;#string&quot;,&quot;nominalAnnualInterestRate&quot;:&quot;#number&quot;,&quot;availabilityHandlingFee&quot;:&quot;#null&quot;,&quot;amortisationSchedule&quot;:&quot;#null&quot;,&quot;paymentDay&quot;:&quot;#null&quot;,&quot;effectiveAnnualInterestRate&quot;:&quot;#number&quot;,&quot;installment&quot;:&quot;#number&quot;,&quot;fng&quot;:&quot;#null&quot;,&quot;monthOverdueInterestRate&quot;:&quot;#number&quot;,&quot;expirationDate&quot;:&quot;#null&quot;},&quot;customerId&quot;:{&quot;customerReliability&quot;:&quot;#string&quot;,&quot;companyIdType&quot;:&quot;#string&quot;,&quot;idType&quot;:&quot;#string&quot;,&quot;companyIdNumber&quot;:&quot;#string&quot;,&quot;idNumber&quot;:&quot;#string&quot;}}}
+
+
+classpath:co/com/bancolombia/acceptancetest/feautures/utilities_retrieve.feature:21</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-16">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-16" class="collapse collapsable-details">
+        <pre>19:09:40.021 classpath:co/com/bancolombia/acceptancetest/feautures/utilities_retrieve.feature:21
+And match response == {&quot;data&quot;:{&quot;installmentsData&quot;:{&quot;interestRate&quot;:#null,&quot;insurances&quot;:[{&quot;amount&quot;:#number,&quot;type&quot;:#string},{&quot;amount&quot;:#number,&quot;type&quot;:#string}],&quot;variableInterestRateAdditionalPoints&quot;:#number,&quot;arreasInterestRate&quot;:#number,&quot;interestRateType&quot;:#string,&quot;nominalAnnualInterestRate&quot;:#number,&quot;availabilityHandlingFee&quot;:#null,&quot;amortisationSchedule&quot;:#null,&quot;paymentDay&quot;:#null,&quot;effectiveAnnualInterestRate&quot;:#number,&quot;installment&quot;:#number,&quot;fng&quot;:#null,&quot;monthOverdueInterestRate&quot;:#number,&quot;expirationDate&quot;:#null},&quot;customerId&quot;:{&quot;customerReliability&quot;:#string,&quot;companyIdType&quot;:#string,&quot;idType&quot;:#string,&quot;companyIdNumber&quot;:#string,&quot;idNumber&quot;:#string}},&quot;status&quot;:#present}
+match failed: EQUALS
+  $ | not equal | actual does not contain key - 'data' (MAP:MAP)
+  {&quot;errors&quot;:[{&quot;code&quot;:&quot;LI012&quot;,&quot;detail&quot;:&quot;Map server error&quot;}],&quot;status&quot;:200}
+  {&quot;status&quot;:&quot;#present&quot;,&quot;data&quot;:{&quot;installmentsData&quot;:{&quot;interestRate&quot;:&quot;#null&quot;,&quot;insurances&quot;:[{&quot;amount&quot;:&quot;#number&quot;,&quot;type&quot;:&quot;#string&quot;},{&quot;amount&quot;:&quot;#number&quot;,&quot;type&quot;:&quot;#string&quot;}],&quot;variableInterestRateAdditionalPoints&quot;:&quot;#number&quot;,&quot;arreasInterestRate&quot;:&quot;#number&quot;,&quot;interestRateType&quot;:&quot;#string&quot;,&quot;nominalAnnualInterestRate&quot;:&quot;#number&quot;,&quot;availabilityHandlingFee&quot;:&quot;#null&quot;,&quot;amortisationSchedule&quot;:&quot;#null&quot;,&quot;paymentDay&quot;:&quot;#null&quot;,&quot;effectiveAnnualInterestRate&quot;:&quot;#number&quot;,&quot;installment&quot;:&quot;#number&quot;,&quot;fng&quot;:&quot;#null&quot;,&quot;monthOverdueInterestRate&quot;:&quot;#number&quot;,&quot;expirationDate&quot;:&quot;#null&quot;},&quot;customerId&quot;:{&quot;customerReliability&quot;:&quot;#string&quot;,&quot;companyIdType&quot;:&quot;#string&quot;,&quot;idType&quot;:&quot;#string&quot;,&quot;companyIdNumber&quot;:&quot;#string&quot;,&quot;idNumber&quot;:&quot;#string&quot;}}}
+
+
+classpath:co/com/bancolombia/acceptancetest/feautures/utilities_retrieve.feature:21
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">47.349</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-17">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-17" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-18">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-18" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">configure logPrettyResponse = true</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">configure ssl = true</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">configure retry = { count: 3, interval: 3000 }</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def req_header = {message-id:'ce0b5865-24eb-4410-b6e8-75327d5554e1',id: '0b04f601-1120-4077-869b-0b6584cc08f0', deviceId: '1', token: '42d1b5d1-b650-4c3a-881a-dbd3df4df765', timestamp: '21-04-2021', consumer: 'APP', Content-Type:'application/vnd.bancolombia.v1+json',X-IBM-Client-Id:'3395d54f-19b8-4918-99d0-8d9afd634ac4', X-IBM-Client-Secret:'K6sR2tM2cS1xM6sY1pJ1uQ6cI3yA2eI7vV0oU3lX7kT0vH8eB0'}</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def snippet_P59 = call read('snippet_interestrate.feature@P59')</span>
+
+  <span class="lead-duration duration">7.784</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name- passed">
+  <span class="keyword indention"></span>
+  <span class="name">co/com/bancolombia/acceptancetest/feautures/snippet_interestrate.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">configure logPrettyResponse = true</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">configure ssl = true</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">configure retry = { count: 3, interval: 3000 }</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def req_header = {message-id:'ce0b5865-24eb-4410-b6e8-75327d5554e1',id: '0b04f601-1120-4077-869b-0b6584cc08f0', deviceId: '1', token: '42d1b5d1-b650-4c3a-881a-dbd3df4df765', timestamp: '21-04-2021', consumer: 'APP', Content-Type:'application/vnd.bancolombia.v1+json',X-IBM-Client-Id:'3395d54f-19b8-4918-99d0-8d9afd634ac4', X-IBM-Client-Secret:'K6sR2tM2cS1xM6sY1pJ1uQ6cI3yA2eI7vV0oU3lX7kT0vH8eB0'}</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-19">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-19" class="collapse collapsable-details">
+        <pre>19:09:40.029 over-writing existing variable 'req_header' with new value: {message-id:'ce0b5865-24eb-4410-b6e8-75327d5554e1',id: '0b04f601-1120-4077-869b-0b6584cc08f0', deviceId: '1', token: '42d1b5d1-b650-4c3a-881a-dbd3df4df765', timestamp: '21-04-2021', consumer: 'APP', Content-Type:'application/vnd.bancolombia.v1+json',X-IBM-Client-Id:'3395d54f-19b8-4918-99d0-8d9afd634ac4', X-IBM-Client-Secret:'K6sR2tM2cS1xM6sY1pJ1uQ6cI3yA2eI7vV0oU3lX7kT0vH8eB0'}
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">headers req_header</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">url 'https://api-aws-qa.apps.ambientesbc.com/int/testing/v1/operations/product-specific/loans/deposits/consumer-loan/interest-rate/internal/loanType/interestRate'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">request {&quot;data&quot;: {&quot;customerSegment&quot;: &quot;S2&quot;,&quot;customerRelaibility&quot;: &quot;G1&quot;,&quot;fixedRateLoans&quot;: [{&quot;fixedRateLoanId&quot;: &quot;P59&quot;}],&quot;variableRateLoans&quot;: [{&quot;variableRateLoanType&quot;: &quot;P59&quot;}],&quot;amount&quot;: 10000000,&quot;loanTerm&quot;: 24}}</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; When passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">method POST</span>
+
+  <span class="lead-duration duration">7.779</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-20">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-20" class="collapse collapsable-details">
+        <pre>19:09:40.031 request:
+1 &gt; POST https://api-aws-qa.apps.ambientesbc.com/int/testing/v1/operations/product-specific/loans/deposits/consumer-loan/interest-rate/internal/loanType/interestRate
+1 &gt; message-id: ce0b5865-24eb-4410-b6e8-75327d5554e1
+1 &gt; id: 0b04f601-1120-4077-869b-0b6584cc08f0
+1 &gt; deviceId: 1
+1 &gt; token: 42d1b5d1-b650-4c3a-881a-dbd3df4df765
+1 &gt; timestamp: 21-04-2021
+1 &gt; consumer: APP
+1 &gt; Content-Type: application/vnd.bancolombia.v1+json; charset=UTF-8
+1 &gt; X-IBM-Client-Id: 3395d54f-19b8-4918-99d0-8d9afd634ac4
+1 &gt; X-IBM-Client-Secret: K6sR2tM2cS1xM6sY1pJ1uQ6cI3yA2eI7vV0oU3lX7kT0vH8eB0
+1 &gt; Content-Length: 190
+1 &gt; Host: api-aws-qa.apps.ambientesbc.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_281)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;data&quot;:{&quot;variableRateLoans&quot;:[{&quot;variableRateLoanType&quot;:&quot;P59&quot;}],&quot;amount&quot;:10000000,&quot;loanTerm&quot;:24,&quot;customerSegment&quot;:&quot;S2&quot;,&quot;fixedRateLoans&quot;:[{&quot;fixedRateLoanId&quot;:&quot;P59&quot;}],&quot;customerRelaibility&quot;:&quot;G1&quot;}}
+
+19:09:47.807 response time in milliseconds: 7776
+1 &lt; 504
+1 &lt; X-Backside-Transport: OK OK
+1 &lt; Connection: Keep-Alive
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Content-Type: application/vnd.bancolombia.v4+json; charset=utf-8
+1 &lt; API-Version: 1.0.0
+1 &lt; RateLimit-Limit: 100/hour
+1 &lt; Message-id: ce0b5865-24eb-4410-b6e8-75327d5554e1
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains
+1 &lt; X-Frame-Options: DENY
+1 &lt; Cache-Control: private, no-cache, no-store, max-age=0, no-transform
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; Content-Security-Policy: default-src 'self' *.bancolombia.com
+{&quot;meta&quot;:{&quot;_requestDateTime&quot;:&quot;2022-01-26T19:09:49.332Z&quot;,&quot;_applicationId&quot;:&quot;3395d54f-19b8-4918-99d0-8d9afd634ac4&quot;,&quot;_messageId&quot;:&quot;ce0b5865-24eb-4410-b6e8-75327d5554e1&quot;},&quot;title&quot;:&quot;Gateway Timeout&quot;,&quot;errors&quot;:[{&quot;code&quot;:&quot;SA504&quot;,&quot;detail&quot;:&quot;Tiempo de respuesta del proveedor del servicio excedido&quot;}],&quot;status&quot;:504}
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-21">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-21" class="collapse collapsable-details">
+        <pre>19:09:47.808 [print] {
+  &quot;meta&quot;: {
+    &quot;_requestDateTime&quot;: &quot;2022-01-26T19:09:49.332Z&quot;,
+    &quot;_applicationId&quot;: &quot;3395d54f-19b8-4918-99d0-8d9afd634ac4&quot;,
+    &quot;_messageId&quot;: &quot;ce0b5865-24eb-4410-b6e8-75327d5554e1&quot;
+  },
+  &quot;title&quot;: &quot;Gateway Timeout&quot;,
+  &quot;errors&quot;: [
+    {
+      &quot;code&quot;: &quot;SA504&quot;,
+      &quot;detail&quot;: &quot;Tiempo de respuesta del proveedor del servicio excedido&quot;
+    }
+  ],
+  &quot;status&quot;: 504
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Then passed">
+  <span class="keyword indention">&gt; Then</span>
+  <span class="name">response.status= 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def snippet_PA5 = call read('snippet_interestrate.feature@PA5')</span>
+
+  <span class="lead-duration duration">7.987</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name- passed">
+  <span class="keyword indention"></span>
+  <span class="name">co/com/bancolombia/acceptancetest/feautures/snippet_interestrate.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">configure logPrettyResponse = true</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">configure ssl = true</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">configure retry = { count: 3, interval: 3000 }</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def req_header = {message-id:'ce0b5865-24eb-4410-b6e8-75327d5554e1',id: '0b04f601-1120-4077-869b-0b6584cc08f0', deviceId: '1', token: '42d1b5d1-b650-4c3a-881a-dbd3df4df765', timestamp: '21-04-2021', consumer: 'APP', Content-Type:'application/vnd.bancolombia.v1+json',X-IBM-Client-Id:'3395d54f-19b8-4918-99d0-8d9afd634ac4', X-IBM-Client-Secret:'K6sR2tM2cS1xM6sY1pJ1uQ6cI3yA2eI7vV0oU3lX7kT0vH8eB0'}</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-22">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-22" class="collapse collapsable-details">
+        <pre>19:09:47.814 over-writing existing variable 'req_header' with new value: {message-id:'ce0b5865-24eb-4410-b6e8-75327d5554e1',id: '0b04f601-1120-4077-869b-0b6584cc08f0', deviceId: '1', token: '42d1b5d1-b650-4c3a-881a-dbd3df4df765', timestamp: '21-04-2021', consumer: 'APP', Content-Type:'application/vnd.bancolombia.v1+json',X-IBM-Client-Id:'3395d54f-19b8-4918-99d0-8d9afd634ac4', X-IBM-Client-Secret:'K6sR2tM2cS1xM6sY1pJ1uQ6cI3yA2eI7vV0oU3lX7kT0vH8eB0'}
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">headers req_header</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">url 'https://api-aws-qa.apps.ambientesbc.com/int/testing/v1/operations/product-specific/loans/deposits/consumer-loan/interest-rate/internal/loanType/interestRate'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">request {&quot;data&quot;: {&quot;customerSegment&quot;: &quot;S2&quot;,&quot;customerRelaibility&quot;: &quot;G1&quot;,&quot;fixedRateLoans&quot;: [{&quot;fixedRateLoanId&quot;: &quot;PA5&quot;}],&quot;variableRateLoans&quot;: [{&quot;variableRateLoanType&quot;: &quot;PA5&quot;}],&quot;amount&quot;: 10000000,&quot;loanTerm&quot;: 24}}</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; When passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">method POST</span>
+
+  <span class="lead-duration duration">7.980</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-23">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-23" class="collapse collapsable-details">
+        <pre>19:09:47.816 request:
+1 &gt; POST https://api-aws-qa.apps.ambientesbc.com/int/testing/v1/operations/product-specific/loans/deposits/consumer-loan/interest-rate/internal/loanType/interestRate
+1 &gt; message-id: ce0b5865-24eb-4410-b6e8-75327d5554e1
+1 &gt; id: 0b04f601-1120-4077-869b-0b6584cc08f0
+1 &gt; deviceId: 1
+1 &gt; token: 42d1b5d1-b650-4c3a-881a-dbd3df4df765
+1 &gt; timestamp: 21-04-2021
+1 &gt; consumer: APP
+1 &gt; Content-Type: application/vnd.bancolombia.v1+json; charset=UTF-8
+1 &gt; X-IBM-Client-Id: 3395d54f-19b8-4918-99d0-8d9afd634ac4
+1 &gt; X-IBM-Client-Secret: K6sR2tM2cS1xM6sY1pJ1uQ6cI3yA2eI7vV0oU3lX7kT0vH8eB0
+1 &gt; Content-Length: 190
+1 &gt; Host: api-aws-qa.apps.ambientesbc.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_281)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;data&quot;:{&quot;variableRateLoans&quot;:[{&quot;variableRateLoanType&quot;:&quot;PA5&quot;}],&quot;amount&quot;:10000000,&quot;loanTerm&quot;:24,&quot;customerSegment&quot;:&quot;S2&quot;,&quot;fixedRateLoans&quot;:[{&quot;fixedRateLoanId&quot;:&quot;PA5&quot;}],&quot;customerRelaibility&quot;:&quot;G1&quot;}}
+
+19:09:55.795 response time in milliseconds: 7979
+1 &lt; 504
+1 &lt; X-Backside-Transport: OK OK
+1 &lt; Connection: Keep-Alive
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Content-Type: application/vnd.bancolombia.v4+json; charset=utf-8
+1 &lt; API-Version: 1.0.0
+1 &lt; RateLimit-Limit: 100/hour
+1 &lt; Message-id: ce0b5865-24eb-4410-b6e8-75327d5554e1
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains
+1 &lt; X-Frame-Options: DENY
+1 &lt; Cache-Control: private, no-cache, no-store, max-age=0, no-transform
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; Content-Security-Policy: default-src 'self' *.bancolombia.com
+{&quot;meta&quot;:{&quot;_requestDateTime&quot;:&quot;2022-01-26T19:09:57.184Z&quot;,&quot;_applicationId&quot;:&quot;3395d54f-19b8-4918-99d0-8d9afd634ac4&quot;,&quot;_messageId&quot;:&quot;ce0b5865-24eb-4410-b6e8-75327d5554e1&quot;},&quot;title&quot;:&quot;Gateway Timeout&quot;,&quot;errors&quot;:[{&quot;code&quot;:&quot;SA504&quot;,&quot;detail&quot;:&quot;Tiempo de respuesta del proveedor del servicio excedido&quot;}],&quot;status&quot;:504}
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-24">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-24" class="collapse collapsable-details">
+        <pre>19:09:55.796 [print] {
+  &quot;meta&quot;: {
+    &quot;_requestDateTime&quot;: &quot;2022-01-26T19:09:57.184Z&quot;,
+    &quot;_applicationId&quot;: &quot;3395d54f-19b8-4918-99d0-8d9afd634ac4&quot;,
+    &quot;_messageId&quot;: &quot;ce0b5865-24eb-4410-b6e8-75327d5554e1&quot;
+  },
+  &quot;title&quot;: &quot;Gateway Timeout&quot;,
+  &quot;errors&quot;: [
+    {
+      &quot;code&quot;: &quot;SA504&quot;,
+      &quot;detail&quot;: &quot;Tiempo de respuesta del proveedor del servicio excedido&quot;
+    }
+  ],
+  &quot;status&quot;: 504
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Then passed">
+  <span class="keyword indention">&gt; Then</span>
+  <span class="name">response.status= 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def snippet = call read('snippet_interestrate.feature@P59')</span>
+
+  <span class="lead-duration duration">7.910</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name- passed">
+  <span class="keyword indention"></span>
+  <span class="name">co/com/bancolombia/acceptancetest/feautures/snippet_interestrate.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">configure logPrettyResponse = true</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">configure ssl = true</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">configure retry = { count: 3, interval: 3000 }</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def req_header = {message-id:'ce0b5865-24eb-4410-b6e8-75327d5554e1',id: '0b04f601-1120-4077-869b-0b6584cc08f0', deviceId: '1', token: '42d1b5d1-b650-4c3a-881a-dbd3df4df765', timestamp: '21-04-2021', consumer: 'APP', Content-Type:'application/vnd.bancolombia.v1+json',X-IBM-Client-Id:'3395d54f-19b8-4918-99d0-8d9afd634ac4', X-IBM-Client-Secret:'K6sR2tM2cS1xM6sY1pJ1uQ6cI3yA2eI7vV0oU3lX7kT0vH8eB0'}</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-25">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-25" class="collapse collapsable-details">
+        <pre>19:09:55.803 over-writing existing variable 'req_header' with new value: {message-id:'ce0b5865-24eb-4410-b6e8-75327d5554e1',id: '0b04f601-1120-4077-869b-0b6584cc08f0', deviceId: '1', token: '42d1b5d1-b650-4c3a-881a-dbd3df4df765', timestamp: '21-04-2021', consumer: 'APP', Content-Type:'application/vnd.bancolombia.v1+json',X-IBM-Client-Id:'3395d54f-19b8-4918-99d0-8d9afd634ac4', X-IBM-Client-Secret:'K6sR2tM2cS1xM6sY1pJ1uQ6cI3yA2eI7vV0oU3lX7kT0vH8eB0'}
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">headers req_header</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">url 'https://api-aws-qa.apps.ambientesbc.com/int/testing/v1/operations/product-specific/loans/deposits/consumer-loan/interest-rate/internal/loanType/interestRate'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">request {&quot;data&quot;: {&quot;customerSegment&quot;: &quot;S2&quot;,&quot;customerRelaibility&quot;: &quot;G1&quot;,&quot;fixedRateLoans&quot;: [{&quot;fixedRateLoanId&quot;: &quot;P59&quot;}],&quot;variableRateLoans&quot;: [{&quot;variableRateLoanType&quot;: &quot;P59&quot;}],&quot;amount&quot;: 10000000,&quot;loanTerm&quot;: 24}}</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; When passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">method POST</span>
+
+  <span class="lead-duration duration">7.902</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-26">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-26" class="collapse collapsable-details">
+        <pre>19:09:55.804 request:
+1 &gt; POST https://api-aws-qa.apps.ambientesbc.com/int/testing/v1/operations/product-specific/loans/deposits/consumer-loan/interest-rate/internal/loanType/interestRate
+1 &gt; message-id: ce0b5865-24eb-4410-b6e8-75327d5554e1
+1 &gt; id: 0b04f601-1120-4077-869b-0b6584cc08f0
+1 &gt; deviceId: 1
+1 &gt; token: 42d1b5d1-b650-4c3a-881a-dbd3df4df765
+1 &gt; timestamp: 21-04-2021
+1 &gt; consumer: APP
+1 &gt; Content-Type: application/vnd.bancolombia.v1+json; charset=UTF-8
+1 &gt; X-IBM-Client-Id: 3395d54f-19b8-4918-99d0-8d9afd634ac4
+1 &gt; X-IBM-Client-Secret: K6sR2tM2cS1xM6sY1pJ1uQ6cI3yA2eI7vV0oU3lX7kT0vH8eB0
+1 &gt; Content-Length: 190
+1 &gt; Host: api-aws-qa.apps.ambientesbc.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_281)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;data&quot;:{&quot;variableRateLoans&quot;:[{&quot;variableRateLoanType&quot;:&quot;P59&quot;}],&quot;amount&quot;:10000000,&quot;loanTerm&quot;:24,&quot;customerSegment&quot;:&quot;S2&quot;,&quot;fixedRateLoans&quot;:[{&quot;fixedRateLoanId&quot;:&quot;P59&quot;}],&quot;customerRelaibility&quot;:&quot;G1&quot;}}
+
+19:10:03.706 response time in milliseconds: 7902
+1 &lt; 504
+1 &lt; X-Backside-Transport: OK OK
+1 &lt; Connection: Keep-Alive
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Content-Type: application/vnd.bancolombia.v4+json; charset=utf-8
+1 &lt; API-Version: 1.0.0
+1 &lt; RateLimit-Limit: 100/hour
+1 &lt; Message-id: ce0b5865-24eb-4410-b6e8-75327d5554e1
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains
+1 &lt; X-Frame-Options: DENY
+1 &lt; Cache-Control: private, no-cache, no-store, max-age=0, no-transform
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; Content-Security-Policy: default-src 'self' *.bancolombia.com
+{&quot;meta&quot;:{&quot;_requestDateTime&quot;:&quot;2022-01-26T19:10:05.202Z&quot;,&quot;_applicationId&quot;:&quot;3395d54f-19b8-4918-99d0-8d9afd634ac4&quot;,&quot;_messageId&quot;:&quot;ce0b5865-24eb-4410-b6e8-75327d5554e1&quot;},&quot;title&quot;:&quot;Gateway Timeout&quot;,&quot;errors&quot;:[{&quot;code&quot;:&quot;SA504&quot;,&quot;detail&quot;:&quot;Tiempo de respuesta del proveedor del servicio excedido&quot;}],&quot;status&quot;:504}
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-27">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-27" class="collapse collapsable-details">
+        <pre>19:10:03.707 [print] {
+  &quot;meta&quot;: {
+    &quot;_requestDateTime&quot;: &quot;2022-01-26T19:10:05.202Z&quot;,
+    &quot;_applicationId&quot;: &quot;3395d54f-19b8-4918-99d0-8d9afd634ac4&quot;,
+    &quot;_messageId&quot;: &quot;ce0b5865-24eb-4410-b6e8-75327d5554e1&quot;
+  },
+  &quot;title&quot;: &quot;Gateway Timeout&quot;,
+  &quot;errors&quot;: [
+    {
+      &quot;code&quot;: &quot;SA504&quot;,
+      &quot;detail&quot;: &quot;Tiempo de respuesta del proveedor del servicio excedido&quot;
+    }
+  ],
+  &quot;status&quot;: 504
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Then passed">
+  <span class="keyword indention">&gt; Then</span>
+  <span class="name">response.status= 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">21.947</span>
+
+
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-28">
+
+<div class="brief failed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Validate that the API returns all fields when the plan is P59</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-28" class="collapse collapsable-details  in ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-29">
+
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-29" class="inner-level collapse collapsable-details  in ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">headers req_header</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">url 'https://financiacion-int-qa.apps.ambientesbc.com/loans-offer/utilities/api/v1/retrieve'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request {&quot;data&quot;: {&quot;customerId&quot;: {&quot;idType&quot;: &quot;CC&quot;,&quot;idNumber&quot;: &quot;244010333932009&quot;,&quot;companyIdType&quot;: &quot;NIT&quot;,&quot;companyIdNumber&quot;: &quot;45678945&quot;,&quot;customerReliability&quot;: &quot;G1&quot;},&quot;offer&quot;: {&quot;productId&quot;: &quot;1&quot;,&quot;amount&quot;: 10000000,&quot;interestRateType&quot; : &quot;F&quot;,&quot;term&quot;: 36,&quot;insurances&quot;: [{&quot;type&quot;: &quot;SD&quot;}]}}}</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method POST</span>
+
+  <span class="lead-duration duration">21.946</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-30">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-30" class="collapse collapsable-details">
+        <pre>19:10:03.709 request:
+1 &gt; POST https://financiacion-int-qa.apps.ambientesbc.com/loans-offer/utilities/api/v1/retrieve
+1 &gt; message-id: ce0b5865-24eb-4410-b6e8-75327d5554e1
+1 &gt; id: 0b04f601-1120-4077-869b-0b6584cc08f0
+1 &gt; deviceId: 1
+1 &gt; token: 42d1b5d1-b650-4c3a-881a-dbd3df4df765
+1 &gt; timestamp: 21-04-2021
+1 &gt; consumer: APP
+1 &gt; Content-Type: application/vnd.bancolombia.v1+json; charset=UTF-8
+1 &gt; X-IBM-Client-Id: 3395d54f-19b8-4918-99d0-8d9afd634ac4
+1 &gt; X-IBM-Client-Secret: K6sR2tM2cS1xM6sY1pJ1uQ6cI3yA2eI7vV0oU3lX7kT0vH8eB0
+1 &gt; Content-Length: 252
+1 &gt; Host: financiacion-int-qa.apps.ambientesbc.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_281)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;data&quot;:{&quot;offer&quot;:{&quot;amount&quot;:10000000,&quot;insurances&quot;:[{&quot;type&quot;:&quot;SD&quot;}],&quot;productId&quot;:&quot;1&quot;,&quot;term&quot;:36,&quot;interestRateType&quot;:&quot;F&quot;},&quot;customerId&quot;:{&quot;customerReliability&quot;:&quot;G1&quot;,&quot;companyIdType&quot;:&quot;NIT&quot;,&quot;idType&quot;:&quot;CC&quot;,&quot;companyIdNumber&quot;:&quot;45678945&quot;,&quot;idNumber&quot;:&quot;244010333932009&quot;}}}
+
+19:10:25.654 response time in milliseconds: 21944
+1 &lt; 500
+1 &lt; Date: Thu, 27 Jan 2022 00:10:34 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 57
+1 &lt; Connection: keep-alive
+1 &lt; strict-transport-security: max-age=31536000; includeSubDomains
+1 &lt; content-security-policy: default-src https:
+1 &lt; x-content-type-options: nosniff
+1 &lt; x-frame-options: DENY
+1 &lt; x-xss-protection: 1; mode=block
+1 &lt; cache-control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; pragma: no-cache
+1 &lt; referrer-policy: no-referrer
+1 &lt; x-envoy-upstream-service-time: 21295
+1 &lt; server: undefined
+{&quot;errors&quot;:[{&quot;code&quot;:&quot;LI012&quot;,&quot;detail&quot;:&quot;Map server error&quot;}]}
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">response.status=200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And failed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response == {&quot;data&quot;:{&quot;installmentsData&quot;:{&quot;interestRate&quot;:#null,&quot;insurances&quot;:[{&quot;amount&quot;:#number,&quot;type&quot;:#string}],&quot;variableInterestRateAdditionalPoints&quot;:#number,&quot;arreasInterestRate&quot;:#number,&quot;interestRateType&quot;:#string,&quot;nominalAnnualInterestRate&quot;:#number,&quot;availabilityHandlingFee&quot;:#null,&quot;amortisationSchedule&quot;:#null,&quot;paymentDay&quot;:#null,&quot;effectiveAnnualInterestRate&quot;:#number,&quot;installment&quot;:#number,&quot;fng&quot;:#null,&quot;monthOverdueInterestRate&quot;:#number,&quot;expirationDate&quot;:#null},&quot;customerId&quot;:{&quot;customerReliability&quot;:#string,&quot;companyIdType&quot;:#string,&quot;idType&quot;:#string,&quot;companyIdNumber&quot;:#string,&quot;idNumber&quot;:#string}},&quot;status&quot;:#present}</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-31">
+          <a>match</a>
+      </div>
+      <div id="msg-31" class="collapse collapsable-details  in ">
+        <pre>match failed: EQUALS
+  $ | not equal | actual does not contain key - 'data' (MAP:MAP)
+  {&quot;errors&quot;:[{&quot;code&quot;:&quot;LI012&quot;,&quot;detail&quot;:&quot;Map server error&quot;}],&quot;status&quot;:200}
+  {&quot;status&quot;:&quot;#present&quot;,&quot;data&quot;:{&quot;installmentsData&quot;:{&quot;interestRate&quot;:&quot;#null&quot;,&quot;insurances&quot;:[{&quot;amount&quot;:&quot;#number&quot;,&quot;type&quot;:&quot;#string&quot;}],&quot;variableInterestRateAdditionalPoints&quot;:&quot;#number&quot;,&quot;arreasInterestRate&quot;:&quot;#number&quot;,&quot;interestRateType&quot;:&quot;#string&quot;,&quot;nominalAnnualInterestRate&quot;:&quot;#number&quot;,&quot;availabilityHandlingFee&quot;:&quot;#null&quot;,&quot;amortisationSchedule&quot;:&quot;#null&quot;,&quot;paymentDay&quot;:&quot;#null&quot;,&quot;effectiveAnnualInterestRate&quot;:&quot;#number&quot;,&quot;installment&quot;:&quot;#number&quot;,&quot;fng&quot;:&quot;#null&quot;,&quot;monthOverdueInterestRate&quot;:&quot;#number&quot;,&quot;expirationDate&quot;:&quot;#null&quot;},&quot;customerId&quot;:{&quot;customerReliability&quot;:&quot;#string&quot;,&quot;companyIdType&quot;:&quot;#string&quot;,&quot;idType&quot;:&quot;#string&quot;,&quot;companyIdNumber&quot;:&quot;#string&quot;,&quot;idNumber&quot;:&quot;#string&quot;}}}
+
+
+classpath:co/com/bancolombia/acceptancetest/feautures/utilities_retrieve.feature:29</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-32">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-32" class="collapse collapsable-details">
+        <pre>19:10:25.655 classpath:co/com/bancolombia/acceptancetest/feautures/utilities_retrieve.feature:29
+And match response == {&quot;data&quot;:{&quot;installmentsData&quot;:{&quot;interestRate&quot;:#null,&quot;insurances&quot;:[{&quot;amount&quot;:#number,&quot;type&quot;:#string}],&quot;variableInterestRateAdditionalPoints&quot;:#number,&quot;arreasInterestRate&quot;:#number,&quot;interestRateType&quot;:#string,&quot;nominalAnnualInterestRate&quot;:#number,&quot;availabilityHandlingFee&quot;:#null,&quot;amortisationSchedule&quot;:#null,&quot;paymentDay&quot;:#null,&quot;effectiveAnnualInterestRate&quot;:#number,&quot;installment&quot;:#number,&quot;fng&quot;:#null,&quot;monthOverdueInterestRate&quot;:#number,&quot;expirationDate&quot;:#null},&quot;customerId&quot;:{&quot;customerReliability&quot;:#string,&quot;companyIdType&quot;:#string,&quot;idType&quot;:#string,&quot;companyIdNumber&quot;:#string,&quot;idNumber&quot;:#string}},&quot;status&quot;:#present}
+match failed: EQUALS
+  $ | not equal | actual does not contain key - 'data' (MAP:MAP)
+  {&quot;errors&quot;:[{&quot;code&quot;:&quot;LI012&quot;,&quot;detail&quot;:&quot;Map server error&quot;}],&quot;status&quot;:200}
+  {&quot;status&quot;:&quot;#present&quot;,&quot;data&quot;:{&quot;installmentsData&quot;:{&quot;interestRate&quot;:&quot;#null&quot;,&quot;insurances&quot;:[{&quot;amount&quot;:&quot;#number&quot;,&quot;type&quot;:&quot;#string&quot;}],&quot;variableInterestRateAdditionalPoints&quot;:&quot;#number&quot;,&quot;arreasInterestRate&quot;:&quot;#number&quot;,&quot;interestRateType&quot;:&quot;#string&quot;,&quot;nominalAnnualInterestRate&quot;:&quot;#number&quot;,&quot;availabilityHandlingFee&quot;:&quot;#null&quot;,&quot;amortisationSchedule&quot;:&quot;#null&quot;,&quot;paymentDay&quot;:&quot;#null&quot;,&quot;effectiveAnnualInterestRate&quot;:&quot;#number&quot;,&quot;installment&quot;:&quot;#number&quot;,&quot;fng&quot;:&quot;#null&quot;,&quot;monthOverdueInterestRate&quot;:&quot;#number&quot;,&quot;expirationDate&quot;:&quot;#null&quot;},&quot;customerId&quot;:{&quot;customerReliability&quot;:&quot;#string&quot;,&quot;companyIdType&quot;:&quot;#string&quot;,&quot;idType&quot;:&quot;#string&quot;,&quot;companyIdNumber&quot;:&quot;#string&quot;,&quot;idNumber&quot;:&quot;#string&quot;}}}
+
+
+classpath:co/com/bancolombia/acceptancetest/feautures/utilities_retrieve.feature:29
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">46.662</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-33">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-33" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-34">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-34" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">configure logPrettyResponse = true</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">configure ssl = true</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">configure retry = { count: 3, interval: 3000 }</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def req_header = {message-id:'ce0b5865-24eb-4410-b6e8-75327d5554e1',id: '0b04f601-1120-4077-869b-0b6584cc08f0', deviceId: '1', token: '42d1b5d1-b650-4c3a-881a-dbd3df4df765', timestamp: '21-04-2021', consumer: 'APP', Content-Type:'application/vnd.bancolombia.v1+json',X-IBM-Client-Id:'3395d54f-19b8-4918-99d0-8d9afd634ac4', X-IBM-Client-Secret:'K6sR2tM2cS1xM6sY1pJ1uQ6cI3yA2eI7vV0oU3lX7kT0vH8eB0'}</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def snippet_P59 = call read('snippet_interestrate.feature@P59')</span>
+
+  <span class="lead-duration duration">7.709</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name- passed">
+  <span class="keyword indention"></span>
+  <span class="name">co/com/bancolombia/acceptancetest/feautures/snippet_interestrate.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">configure logPrettyResponse = true</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">configure ssl = true</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">configure retry = { count: 3, interval: 3000 }</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def req_header = {message-id:'ce0b5865-24eb-4410-b6e8-75327d5554e1',id: '0b04f601-1120-4077-869b-0b6584cc08f0', deviceId: '1', token: '42d1b5d1-b650-4c3a-881a-dbd3df4df765', timestamp: '21-04-2021', consumer: 'APP', Content-Type:'application/vnd.bancolombia.v1+json',X-IBM-Client-Id:'3395d54f-19b8-4918-99d0-8d9afd634ac4', X-IBM-Client-Secret:'K6sR2tM2cS1xM6sY1pJ1uQ6cI3yA2eI7vV0oU3lX7kT0vH8eB0'}</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-35">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-35" class="collapse collapsable-details">
+        <pre>19:10:25.662 over-writing existing variable 'req_header' with new value: {message-id:'ce0b5865-24eb-4410-b6e8-75327d5554e1',id: '0b04f601-1120-4077-869b-0b6584cc08f0', deviceId: '1', token: '42d1b5d1-b650-4c3a-881a-dbd3df4df765', timestamp: '21-04-2021', consumer: 'APP', Content-Type:'application/vnd.bancolombia.v1+json',X-IBM-Client-Id:'3395d54f-19b8-4918-99d0-8d9afd634ac4', X-IBM-Client-Secret:'K6sR2tM2cS1xM6sY1pJ1uQ6cI3yA2eI7vV0oU3lX7kT0vH8eB0'}
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">headers req_header</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">url 'https://api-aws-qa.apps.ambientesbc.com/int/testing/v1/operations/product-specific/loans/deposits/consumer-loan/interest-rate/internal/loanType/interestRate'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">request {&quot;data&quot;: {&quot;customerSegment&quot;: &quot;S2&quot;,&quot;customerRelaibility&quot;: &quot;G1&quot;,&quot;fixedRateLoans&quot;: [{&quot;fixedRateLoanId&quot;: &quot;P59&quot;}],&quot;variableRateLoans&quot;: [{&quot;variableRateLoanType&quot;: &quot;P59&quot;}],&quot;amount&quot;: 10000000,&quot;loanTerm&quot;: 24}}</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; When passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">method POST</span>
+
+  <span class="lead-duration duration">7.704</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-36">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-36" class="collapse collapsable-details">
+        <pre>19:10:25.665 request:
+1 &gt; POST https://api-aws-qa.apps.ambientesbc.com/int/testing/v1/operations/product-specific/loans/deposits/consumer-loan/interest-rate/internal/loanType/interestRate
+1 &gt; message-id: ce0b5865-24eb-4410-b6e8-75327d5554e1
+1 &gt; id: 0b04f601-1120-4077-869b-0b6584cc08f0
+1 &gt; deviceId: 1
+1 &gt; token: 42d1b5d1-b650-4c3a-881a-dbd3df4df765
+1 &gt; timestamp: 21-04-2021
+1 &gt; consumer: APP
+1 &gt; Content-Type: application/vnd.bancolombia.v1+json; charset=UTF-8
+1 &gt; X-IBM-Client-Id: 3395d54f-19b8-4918-99d0-8d9afd634ac4
+1 &gt; X-IBM-Client-Secret: K6sR2tM2cS1xM6sY1pJ1uQ6cI3yA2eI7vV0oU3lX7kT0vH8eB0
+1 &gt; Content-Length: 190
+1 &gt; Host: api-aws-qa.apps.ambientesbc.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_281)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;data&quot;:{&quot;variableRateLoans&quot;:[{&quot;variableRateLoanType&quot;:&quot;P59&quot;}],&quot;amount&quot;:10000000,&quot;loanTerm&quot;:24,&quot;customerSegment&quot;:&quot;S2&quot;,&quot;fixedRateLoans&quot;:[{&quot;fixedRateLoanId&quot;:&quot;P59&quot;}],&quot;customerRelaibility&quot;:&quot;G1&quot;}}
+
+19:10:33.367 response time in milliseconds: 7702
+1 &lt; 504
+1 &lt; X-Backside-Transport: OK OK
+1 &lt; Connection: Keep-Alive
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Content-Type: application/vnd.bancolombia.v4+json; charset=utf-8
+1 &lt; API-Version: 1.0.0
+1 &lt; RateLimit-Limit: 100/hour
+1 &lt; Message-id: ce0b5865-24eb-4410-b6e8-75327d5554e1
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains
+1 &lt; X-Frame-Options: DENY
+1 &lt; Cache-Control: private, no-cache, no-store, max-age=0, no-transform
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; Content-Security-Policy: default-src 'self' *.bancolombia.com
+{&quot;meta&quot;:{&quot;_requestDateTime&quot;:&quot;2022-01-26T19:10:34.930Z&quot;,&quot;_applicationId&quot;:&quot;3395d54f-19b8-4918-99d0-8d9afd634ac4&quot;,&quot;_messageId&quot;:&quot;ce0b5865-24eb-4410-b6e8-75327d5554e1&quot;},&quot;title&quot;:&quot;Gateway Timeout&quot;,&quot;errors&quot;:[{&quot;code&quot;:&quot;SA504&quot;,&quot;detail&quot;:&quot;Tiempo de respuesta del proveedor del servicio excedido&quot;}],&quot;status&quot;:504}
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-37">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-37" class="collapse collapsable-details">
+        <pre>19:10:33.367 [print] {
+  &quot;meta&quot;: {
+    &quot;_requestDateTime&quot;: &quot;2022-01-26T19:10:34.930Z&quot;,
+    &quot;_applicationId&quot;: &quot;3395d54f-19b8-4918-99d0-8d9afd634ac4&quot;,
+    &quot;_messageId&quot;: &quot;ce0b5865-24eb-4410-b6e8-75327d5554e1&quot;
+  },
+  &quot;title&quot;: &quot;Gateway Timeout&quot;,
+  &quot;errors&quot;: [
+    {
+      &quot;code&quot;: &quot;SA504&quot;,
+      &quot;detail&quot;: &quot;Tiempo de respuesta del proveedor del servicio excedido&quot;
+    }
+  ],
+  &quot;status&quot;: 504
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Then passed">
+  <span class="keyword indention">&gt; Then</span>
+  <span class="name">response.status= 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def snippet_PA5 = call read('snippet_interestrate.feature@PA5')</span>
+
+  <span class="lead-duration duration">7.778</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name- passed">
+  <span class="keyword indention"></span>
+  <span class="name">co/com/bancolombia/acceptancetest/feautures/snippet_interestrate.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">configure logPrettyResponse = true</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">configure ssl = true</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">configure retry = { count: 3, interval: 3000 }</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def req_header = {message-id:'ce0b5865-24eb-4410-b6e8-75327d5554e1',id: '0b04f601-1120-4077-869b-0b6584cc08f0', deviceId: '1', token: '42d1b5d1-b650-4c3a-881a-dbd3df4df765', timestamp: '21-04-2021', consumer: 'APP', Content-Type:'application/vnd.bancolombia.v1+json',X-IBM-Client-Id:'3395d54f-19b8-4918-99d0-8d9afd634ac4', X-IBM-Client-Secret:'K6sR2tM2cS1xM6sY1pJ1uQ6cI3yA2eI7vV0oU3lX7kT0vH8eB0'}</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-38">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-38" class="collapse collapsable-details">
+        <pre>19:10:33.373 over-writing existing variable 'req_header' with new value: {message-id:'ce0b5865-24eb-4410-b6e8-75327d5554e1',id: '0b04f601-1120-4077-869b-0b6584cc08f0', deviceId: '1', token: '42d1b5d1-b650-4c3a-881a-dbd3df4df765', timestamp: '21-04-2021', consumer: 'APP', Content-Type:'application/vnd.bancolombia.v1+json',X-IBM-Client-Id:'3395d54f-19b8-4918-99d0-8d9afd634ac4', X-IBM-Client-Secret:'K6sR2tM2cS1xM6sY1pJ1uQ6cI3yA2eI7vV0oU3lX7kT0vH8eB0'}
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">headers req_header</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">url 'https://api-aws-qa.apps.ambientesbc.com/int/testing/v1/operations/product-specific/loans/deposits/consumer-loan/interest-rate/internal/loanType/interestRate'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">request {&quot;data&quot;: {&quot;customerSegment&quot;: &quot;S2&quot;,&quot;customerRelaibility&quot;: &quot;G1&quot;,&quot;fixedRateLoans&quot;: [{&quot;fixedRateLoanId&quot;: &quot;PA5&quot;}],&quot;variableRateLoans&quot;: [{&quot;variableRateLoanType&quot;: &quot;PA5&quot;}],&quot;amount&quot;: 10000000,&quot;loanTerm&quot;: 24}}</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; When passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">method POST</span>
+
+  <span class="lead-duration duration">7.772</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-39">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-39" class="collapse collapsable-details">
+        <pre>19:10:33.375 request:
+1 &gt; POST https://api-aws-qa.apps.ambientesbc.com/int/testing/v1/operations/product-specific/loans/deposits/consumer-loan/interest-rate/internal/loanType/interestRate
+1 &gt; message-id: ce0b5865-24eb-4410-b6e8-75327d5554e1
+1 &gt; id: 0b04f601-1120-4077-869b-0b6584cc08f0
+1 &gt; deviceId: 1
+1 &gt; token: 42d1b5d1-b650-4c3a-881a-dbd3df4df765
+1 &gt; timestamp: 21-04-2021
+1 &gt; consumer: APP
+1 &gt; Content-Type: application/vnd.bancolombia.v1+json; charset=UTF-8
+1 &gt; X-IBM-Client-Id: 3395d54f-19b8-4918-99d0-8d9afd634ac4
+1 &gt; X-IBM-Client-Secret: K6sR2tM2cS1xM6sY1pJ1uQ6cI3yA2eI7vV0oU3lX7kT0vH8eB0
+1 &gt; Content-Length: 190
+1 &gt; Host: api-aws-qa.apps.ambientesbc.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_281)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;data&quot;:{&quot;variableRateLoans&quot;:[{&quot;variableRateLoanType&quot;:&quot;PA5&quot;}],&quot;amount&quot;:10000000,&quot;loanTerm&quot;:24,&quot;customerSegment&quot;:&quot;S2&quot;,&quot;fixedRateLoans&quot;:[{&quot;fixedRateLoanId&quot;:&quot;PA5&quot;}],&quot;customerRelaibility&quot;:&quot;G1&quot;}}
+
+19:10:41.146 response time in milliseconds: 7771
+1 &lt; 504
+1 &lt; X-Backside-Transport: OK OK
+1 &lt; Connection: Keep-Alive
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Content-Type: application/vnd.bancolombia.v4+json; charset=utf-8
+1 &lt; API-Version: 1.0.0
+1 &lt; RateLimit-Limit: 100/hour
+1 &lt; Message-id: ce0b5865-24eb-4410-b6e8-75327d5554e1
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains
+1 &lt; X-Frame-Options: DENY
+1 &lt; Cache-Control: private, no-cache, no-store, max-age=0, no-transform
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; Content-Security-Policy: default-src 'self' *.bancolombia.com
+{&quot;meta&quot;:{&quot;_requestDateTime&quot;:&quot;2022-01-26T19:10:42.657Z&quot;,&quot;_applicationId&quot;:&quot;3395d54f-19b8-4918-99d0-8d9afd634ac4&quot;,&quot;_messageId&quot;:&quot;ce0b5865-24eb-4410-b6e8-75327d5554e1&quot;},&quot;title&quot;:&quot;Gateway Timeout&quot;,&quot;errors&quot;:[{&quot;code&quot;:&quot;SA504&quot;,&quot;detail&quot;:&quot;Tiempo de respuesta del proveedor del servicio excedido&quot;}],&quot;status&quot;:504}
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-40">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-40" class="collapse collapsable-details">
+        <pre>19:10:41.147 [print] {
+  &quot;meta&quot;: {
+    &quot;_requestDateTime&quot;: &quot;2022-01-26T19:10:42.657Z&quot;,
+    &quot;_applicationId&quot;: &quot;3395d54f-19b8-4918-99d0-8d9afd634ac4&quot;,
+    &quot;_messageId&quot;: &quot;ce0b5865-24eb-4410-b6e8-75327d5554e1&quot;
+  },
+  &quot;title&quot;: &quot;Gateway Timeout&quot;,
+  &quot;errors&quot;: [
+    {
+      &quot;code&quot;: &quot;SA504&quot;,
+      &quot;detail&quot;: &quot;Tiempo de respuesta del proveedor del servicio excedido&quot;
+    }
+  ],
+  &quot;status&quot;: 504
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Then passed">
+  <span class="keyword indention">&gt; Then</span>
+  <span class="name">response.status= 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def snippet = call read('snippet_interestrate.feature@P59')</span>
+
+  <span class="lead-duration duration">7.849</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name- passed">
+  <span class="keyword indention"></span>
+  <span class="name">co/com/bancolombia/acceptancetest/feautures/snippet_interestrate.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">configure logPrettyResponse = true</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">configure ssl = true</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">configure retry = { count: 3, interval: 3000 }</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def req_header = {message-id:'ce0b5865-24eb-4410-b6e8-75327d5554e1',id: '0b04f601-1120-4077-869b-0b6584cc08f0', deviceId: '1', token: '42d1b5d1-b650-4c3a-881a-dbd3df4df765', timestamp: '21-04-2021', consumer: 'APP', Content-Type:'application/vnd.bancolombia.v1+json',X-IBM-Client-Id:'3395d54f-19b8-4918-99d0-8d9afd634ac4', X-IBM-Client-Secret:'K6sR2tM2cS1xM6sY1pJ1uQ6cI3yA2eI7vV0oU3lX7kT0vH8eB0'}</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-41">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-41" class="collapse collapsable-details">
+        <pre>19:10:41.152 over-writing existing variable 'req_header' with new value: {message-id:'ce0b5865-24eb-4410-b6e8-75327d5554e1',id: '0b04f601-1120-4077-869b-0b6584cc08f0', deviceId: '1', token: '42d1b5d1-b650-4c3a-881a-dbd3df4df765', timestamp: '21-04-2021', consumer: 'APP', Content-Type:'application/vnd.bancolombia.v1+json',X-IBM-Client-Id:'3395d54f-19b8-4918-99d0-8d9afd634ac4', X-IBM-Client-Secret:'K6sR2tM2cS1xM6sY1pJ1uQ6cI3yA2eI7vV0oU3lX7kT0vH8eB0'}
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">headers req_header</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">url 'https://api-aws-qa.apps.ambientesbc.com/int/testing/v1/operations/product-specific/loans/deposits/consumer-loan/interest-rate/internal/loanType/interestRate'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">request {&quot;data&quot;: {&quot;customerSegment&quot;: &quot;S2&quot;,&quot;customerRelaibility&quot;: &quot;G1&quot;,&quot;fixedRateLoans&quot;: [{&quot;fixedRateLoanId&quot;: &quot;P59&quot;}],&quot;variableRateLoans&quot;: [{&quot;variableRateLoanType&quot;: &quot;P59&quot;}],&quot;amount&quot;: 10000000,&quot;loanTerm&quot;: 24}}</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; When passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">method POST</span>
+
+  <span class="lead-duration duration">7.843</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-42">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-42" class="collapse collapsable-details">
+        <pre>19:10:41.154 request:
+1 &gt; POST https://api-aws-qa.apps.ambientesbc.com/int/testing/v1/operations/product-specific/loans/deposits/consumer-loan/interest-rate/internal/loanType/interestRate
+1 &gt; message-id: ce0b5865-24eb-4410-b6e8-75327d5554e1
+1 &gt; id: 0b04f601-1120-4077-869b-0b6584cc08f0
+1 &gt; deviceId: 1
+1 &gt; token: 42d1b5d1-b650-4c3a-881a-dbd3df4df765
+1 &gt; timestamp: 21-04-2021
+1 &gt; consumer: APP
+1 &gt; Content-Type: application/vnd.bancolombia.v1+json; charset=UTF-8
+1 &gt; X-IBM-Client-Id: 3395d54f-19b8-4918-99d0-8d9afd634ac4
+1 &gt; X-IBM-Client-Secret: K6sR2tM2cS1xM6sY1pJ1uQ6cI3yA2eI7vV0oU3lX7kT0vH8eB0
+1 &gt; Content-Length: 190
+1 &gt; Host: api-aws-qa.apps.ambientesbc.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_281)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;data&quot;:{&quot;variableRateLoans&quot;:[{&quot;variableRateLoanType&quot;:&quot;P59&quot;}],&quot;amount&quot;:10000000,&quot;loanTerm&quot;:24,&quot;customerSegment&quot;:&quot;S2&quot;,&quot;fixedRateLoans&quot;:[{&quot;fixedRateLoanId&quot;:&quot;P59&quot;}],&quot;customerRelaibility&quot;:&quot;G1&quot;}}
+
+19:10:48.995 response time in milliseconds: 7841
+1 &lt; 504
+1 &lt; X-Backside-Transport: OK OK
+1 &lt; Connection: Keep-Alive
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Content-Type: application/vnd.bancolombia.v4+json; charset=utf-8
+1 &lt; API-Version: 1.0.0
+1 &lt; RateLimit-Limit: 100/hour
+1 &lt; Message-id: ce0b5865-24eb-4410-b6e8-75327d5554e1
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains
+1 &lt; X-Frame-Options: DENY
+1 &lt; Cache-Control: private, no-cache, no-store, max-age=0, no-transform
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; Content-Security-Policy: default-src 'self' *.bancolombia.com
+{&quot;meta&quot;:{&quot;_requestDateTime&quot;:&quot;2022-01-26T19:10:50.546Z&quot;,&quot;_applicationId&quot;:&quot;3395d54f-19b8-4918-99d0-8d9afd634ac4&quot;,&quot;_messageId&quot;:&quot;ce0b5865-24eb-4410-b6e8-75327d5554e1&quot;},&quot;title&quot;:&quot;Gateway Timeout&quot;,&quot;errors&quot;:[{&quot;code&quot;:&quot;SA504&quot;,&quot;detail&quot;:&quot;Tiempo de respuesta del proveedor del servicio excedido&quot;}],&quot;status&quot;:504}
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-43">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-43" class="collapse collapsable-details">
+        <pre>19:10:48.996 [print] {
+  &quot;meta&quot;: {
+    &quot;_requestDateTime&quot;: &quot;2022-01-26T19:10:50.546Z&quot;,
+    &quot;_applicationId&quot;: &quot;3395d54f-19b8-4918-99d0-8d9afd634ac4&quot;,
+    &quot;_messageId&quot;: &quot;ce0b5865-24eb-4410-b6e8-75327d5554e1&quot;
+  },
+  &quot;title&quot;: &quot;Gateway Timeout&quot;,
+  &quot;errors&quot;: [
+    {
+      &quot;code&quot;: &quot;SA504&quot;,
+      &quot;detail&quot;: &quot;Tiempo de respuesta del proveedor del servicio excedido&quot;
+    }
+  ],
+  &quot;status&quot;: 504
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Then passed">
+  <span class="keyword indention">&gt; Then</span>
+  <span class="name">response.status= 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">21.746</span>
+
+
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-44">
+
+<div class="brief failed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Validate that the API return correct interest rate for G1 risk group and P59 plan</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-44" class="collapse collapsable-details  in ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-45">
+
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-45" class="inner-level collapse collapsable-details  in ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">headers req_header</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">url 'https://financiacion-int-qa.apps.ambientesbc.com/loans-offer/utilities/api/v1/retrieve'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request {&quot;data&quot;: {&quot;customerId&quot;: {&quot;idType&quot;: &quot;CC&quot;,&quot;idNumber&quot;: &quot;244010333932009&quot;,&quot;companyIdType&quot;: &quot;NIT&quot;,&quot;companyIdNumber&quot;: &quot;45678945&quot;,&quot;customerReliability&quot;: &quot;G1&quot;},&quot;offer&quot;: {&quot;productId&quot;: &quot;1&quot;,&quot;amount&quot;: &quot;10000000&quot;,&quot;term&quot;: 24,&quot;insurances&quot;: [{&quot;type&quot;: &quot;SD&quot;}]},&quot;amortisationSchedule&quot;: &quot;true&quot;}}</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method POST</span>
+
+  <span class="lead-duration duration">21.743</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-46">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-46" class="collapse collapsable-details">
+        <pre>19:10:48.998 request:
+1 &gt; POST https://financiacion-int-qa.apps.ambientesbc.com/loans-offer/utilities/api/v1/retrieve
+1 &gt; message-id: ce0b5865-24eb-4410-b6e8-75327d5554e1
+1 &gt; id: 0b04f601-1120-4077-869b-0b6584cc08f0
+1 &gt; deviceId: 1
+1 &gt; token: 42d1b5d1-b650-4c3a-881a-dbd3df4df765
+1 &gt; timestamp: 21-04-2021
+1 &gt; consumer: APP
+1 &gt; Content-Type: application/vnd.bancolombia.v1+json; charset=UTF-8
+1 &gt; X-IBM-Client-Id: 3395d54f-19b8-4918-99d0-8d9afd634ac4
+1 &gt; X-IBM-Client-Secret: K6sR2tM2cS1xM6sY1pJ1uQ6cI3yA2eI7vV0oU3lX7kT0vH8eB0
+1 &gt; Content-Length: 261
+1 &gt; Host: financiacion-int-qa.apps.ambientesbc.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_281)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;data&quot;:{&quot;offer&quot;:{&quot;amount&quot;:&quot;10000000&quot;,&quot;insurances&quot;:[{&quot;type&quot;:&quot;SD&quot;}],&quot;productId&quot;:&quot;1&quot;,&quot;term&quot;:24},&quot;amortisationSchedule&quot;:&quot;true&quot;,&quot;customerId&quot;:{&quot;customerReliability&quot;:&quot;G1&quot;,&quot;companyIdType&quot;:&quot;NIT&quot;,&quot;idType&quot;:&quot;CC&quot;,&quot;companyIdNumber&quot;:&quot;45678945&quot;,&quot;idNumber&quot;:&quot;244010333932009&quot;}}}
+
+19:11:10.740 response time in milliseconds: 21741
+1 &lt; 500
+1 &lt; Date: Thu, 27 Jan 2022 00:11:19 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 57
+1 &lt; Connection: keep-alive
+1 &lt; strict-transport-security: max-age=31536000; includeSubDomains
+1 &lt; content-security-policy: default-src https:
+1 &lt; x-content-type-options: nosniff
+1 &lt; x-frame-options: DENY
+1 &lt; x-xss-protection: 1; mode=block
+1 &lt; cache-control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; pragma: no-cache
+1 &lt; referrer-policy: no-referrer
+1 &lt; x-envoy-upstream-service-time: 21111
+1 &lt; server: undefined
+{&quot;errors&quot;:[{&quot;code&quot;:&quot;LI012&quot;,&quot;detail&quot;:&quot;Map server error&quot;}]}
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print snippet_P59.response</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-47">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-47" class="collapse collapsable-details">
+        <pre>19:11:10.742 [print] {
+  &quot;meta&quot;: {
+    &quot;_requestDateTime&quot;: &quot;2022-01-26T19:10:34.930Z&quot;,
+    &quot;_applicationId&quot;: &quot;3395d54f-19b8-4918-99d0-8d9afd634ac4&quot;,
+    &quot;_messageId&quot;: &quot;ce0b5865-24eb-4410-b6e8-75327d5554e1&quot;
+  },
+  &quot;title&quot;: &quot;Gateway Timeout&quot;,
+  &quot;errors&quot;: [
+    {
+      &quot;code&quot;: &quot;SA504&quot;,
+      &quot;detail&quot;: &quot;Tiempo de respuesta del proveedor del servicio excedido&quot;
+    }
+  ],
+  &quot;status&quot;: 200
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">response.status= 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* failed">
+  <span class="keyword indention">*</span>
+  <span class="name">def val = response.data.installmentsData.arreasInterestRate</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-48">
+          <a>&gt;&gt;&gt;&gt;</a>
+      </div>
+      <div id="msg-48" class="collapse collapsable-details  in ">
+        <pre>&gt;&gt;&gt;&gt; js failed:
+01: response.data.installmentsData.arreasInterestRate
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: TypeError: Cannot read property &quot;installmentsData&quot; from undefined
+- &lt;js&gt;.:program(Unnamed:1)
+
+classpath:co/com/bancolombia/acceptancetest/feautures/utilities_retrieve.feature:38</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-49">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-49" class="collapse collapsable-details">
+        <pre>19:11:10.744 classpath:co/com/bancolombia/acceptancetest/feautures/utilities_retrieve.feature:38
+* def val = response.data.installmentsData.arreasInterestRate
+&gt;&gt;&gt;&gt; js failed:
+01: response.data.installmentsData.arreasInterestRate
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: TypeError: Cannot read property &quot;installmentsData&quot; from undefined
+- &lt;js&gt;.:program(Unnamed:1)
+
+classpath:co/com/bancolombia/acceptancetest/feautures/utilities_retrieve.feature:38
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">match snippet_P59.response.data.rateRange[0].rangeType[*].arrearsRate contains val</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">print response.data.installmentsData</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">47.111</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-50">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-50" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-51">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-51" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">configure logPrettyResponse = true</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">configure ssl = true</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">configure retry = { count: 3, interval: 3000 }</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def req_header = {message-id:'ce0b5865-24eb-4410-b6e8-75327d5554e1',id: '0b04f601-1120-4077-869b-0b6584cc08f0', deviceId: '1', token: '42d1b5d1-b650-4c3a-881a-dbd3df4df765', timestamp: '21-04-2021', consumer: 'APP', Content-Type:'application/vnd.bancolombia.v1+json',X-IBM-Client-Id:'3395d54f-19b8-4918-99d0-8d9afd634ac4', X-IBM-Client-Secret:'K6sR2tM2cS1xM6sY1pJ1uQ6cI3yA2eI7vV0oU3lX7kT0vH8eB0'}</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def snippet_P59 = call read('snippet_interestrate.feature@P59')</span>
+
+  <span class="lead-duration duration">7.851</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name- passed">
+  <span class="keyword indention"></span>
+  <span class="name">co/com/bancolombia/acceptancetest/feautures/snippet_interestrate.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">configure logPrettyResponse = true</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">configure ssl = true</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">configure retry = { count: 3, interval: 3000 }</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def req_header = {message-id:'ce0b5865-24eb-4410-b6e8-75327d5554e1',id: '0b04f601-1120-4077-869b-0b6584cc08f0', deviceId: '1', token: '42d1b5d1-b650-4c3a-881a-dbd3df4df765', timestamp: '21-04-2021', consumer: 'APP', Content-Type:'application/vnd.bancolombia.v1+json',X-IBM-Client-Id:'3395d54f-19b8-4918-99d0-8d9afd634ac4', X-IBM-Client-Secret:'K6sR2tM2cS1xM6sY1pJ1uQ6cI3yA2eI7vV0oU3lX7kT0vH8eB0'}</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-52">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-52" class="collapse collapsable-details">
+        <pre>19:11:10.750 over-writing existing variable 'req_header' with new value: {message-id:'ce0b5865-24eb-4410-b6e8-75327d5554e1',id: '0b04f601-1120-4077-869b-0b6584cc08f0', deviceId: '1', token: '42d1b5d1-b650-4c3a-881a-dbd3df4df765', timestamp: '21-04-2021', consumer: 'APP', Content-Type:'application/vnd.bancolombia.v1+json',X-IBM-Client-Id:'3395d54f-19b8-4918-99d0-8d9afd634ac4', X-IBM-Client-Secret:'K6sR2tM2cS1xM6sY1pJ1uQ6cI3yA2eI7vV0oU3lX7kT0vH8eB0'}
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">headers req_header</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">url 'https://api-aws-qa.apps.ambientesbc.com/int/testing/v1/operations/product-specific/loans/deposits/consumer-loan/interest-rate/internal/loanType/interestRate'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">request {&quot;data&quot;: {&quot;customerSegment&quot;: &quot;S2&quot;,&quot;customerRelaibility&quot;: &quot;G1&quot;,&quot;fixedRateLoans&quot;: [{&quot;fixedRateLoanId&quot;: &quot;P59&quot;}],&quot;variableRateLoans&quot;: [{&quot;variableRateLoanType&quot;: &quot;P59&quot;}],&quot;amount&quot;: 10000000,&quot;loanTerm&quot;: 24}}</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; When passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">method POST</span>
+
+  <span class="lead-duration duration">7.847</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-53">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-53" class="collapse collapsable-details">
+        <pre>19:11:10.752 request:
+1 &gt; POST https://api-aws-qa.apps.ambientesbc.com/int/testing/v1/operations/product-specific/loans/deposits/consumer-loan/interest-rate/internal/loanType/interestRate
+1 &gt; message-id: ce0b5865-24eb-4410-b6e8-75327d5554e1
+1 &gt; id: 0b04f601-1120-4077-869b-0b6584cc08f0
+1 &gt; deviceId: 1
+1 &gt; token: 42d1b5d1-b650-4c3a-881a-dbd3df4df765
+1 &gt; timestamp: 21-04-2021
+1 &gt; consumer: APP
+1 &gt; Content-Type: application/vnd.bancolombia.v1+json; charset=UTF-8
+1 &gt; X-IBM-Client-Id: 3395d54f-19b8-4918-99d0-8d9afd634ac4
+1 &gt; X-IBM-Client-Secret: K6sR2tM2cS1xM6sY1pJ1uQ6cI3yA2eI7vV0oU3lX7kT0vH8eB0
+1 &gt; Content-Length: 190
+1 &gt; Host: api-aws-qa.apps.ambientesbc.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_281)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;data&quot;:{&quot;variableRateLoans&quot;:[{&quot;variableRateLoanType&quot;:&quot;P59&quot;}],&quot;amount&quot;:10000000,&quot;loanTerm&quot;:24,&quot;customerSegment&quot;:&quot;S2&quot;,&quot;fixedRateLoans&quot;:[{&quot;fixedRateLoanId&quot;:&quot;P59&quot;}],&quot;customerRelaibility&quot;:&quot;G1&quot;}}
+
+19:11:18.597 response time in milliseconds: 7845
+1 &lt; 504
+1 &lt; X-Backside-Transport: OK OK
+1 &lt; Connection: Keep-Alive
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Content-Type: application/vnd.bancolombia.v4+json; charset=utf-8
+1 &lt; API-Version: 1.0.0
+1 &lt; RateLimit-Limit: 100/hour
+1 &lt; Message-id: ce0b5865-24eb-4410-b6e8-75327d5554e1
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains
+1 &lt; X-Frame-Options: DENY
+1 &lt; Cache-Control: private, no-cache, no-store, max-age=0, no-transform
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; Content-Security-Policy: default-src 'self' *.bancolombia.com
+{&quot;meta&quot;:{&quot;_requestDateTime&quot;:&quot;2022-01-26T19:11:20.089Z&quot;,&quot;_applicationId&quot;:&quot;3395d54f-19b8-4918-99d0-8d9afd634ac4&quot;,&quot;_messageId&quot;:&quot;ce0b5865-24eb-4410-b6e8-75327d5554e1&quot;},&quot;title&quot;:&quot;Gateway Timeout&quot;,&quot;errors&quot;:[{&quot;code&quot;:&quot;SA504&quot;,&quot;detail&quot;:&quot;Tiempo de respuesta del proveedor del servicio excedido&quot;}],&quot;status&quot;:504}
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-54">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-54" class="collapse collapsable-details">
+        <pre>19:11:18.598 [print] {
+  &quot;meta&quot;: {
+    &quot;_requestDateTime&quot;: &quot;2022-01-26T19:11:20.089Z&quot;,
+    &quot;_applicationId&quot;: &quot;3395d54f-19b8-4918-99d0-8d9afd634ac4&quot;,
+    &quot;_messageId&quot;: &quot;ce0b5865-24eb-4410-b6e8-75327d5554e1&quot;
+  },
+  &quot;title&quot;: &quot;Gateway Timeout&quot;,
+  &quot;errors&quot;: [
+    {
+      &quot;code&quot;: &quot;SA504&quot;,
+      &quot;detail&quot;: &quot;Tiempo de respuesta del proveedor del servicio excedido&quot;
+    }
+  ],
+  &quot;status&quot;: 504
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Then passed">
+  <span class="keyword indention">&gt; Then</span>
+  <span class="name">response.status= 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def snippet_PA5 = call read('snippet_interestrate.feature@PA5')</span>
+
+  <span class="lead-duration duration">7.781</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name- passed">
+  <span class="keyword indention"></span>
+  <span class="name">co/com/bancolombia/acceptancetest/feautures/snippet_interestrate.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">configure logPrettyResponse = true</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">configure ssl = true</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">configure retry = { count: 3, interval: 3000 }</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def req_header = {message-id:'ce0b5865-24eb-4410-b6e8-75327d5554e1',id: '0b04f601-1120-4077-869b-0b6584cc08f0', deviceId: '1', token: '42d1b5d1-b650-4c3a-881a-dbd3df4df765', timestamp: '21-04-2021', consumer: 'APP', Content-Type:'application/vnd.bancolombia.v1+json',X-IBM-Client-Id:'3395d54f-19b8-4918-99d0-8d9afd634ac4', X-IBM-Client-Secret:'K6sR2tM2cS1xM6sY1pJ1uQ6cI3yA2eI7vV0oU3lX7kT0vH8eB0'}</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-55">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-55" class="collapse collapsable-details">
+        <pre>19:11:18.605 over-writing existing variable 'req_header' with new value: {message-id:'ce0b5865-24eb-4410-b6e8-75327d5554e1',id: '0b04f601-1120-4077-869b-0b6584cc08f0', deviceId: '1', token: '42d1b5d1-b650-4c3a-881a-dbd3df4df765', timestamp: '21-04-2021', consumer: 'APP', Content-Type:'application/vnd.bancolombia.v1+json',X-IBM-Client-Id:'3395d54f-19b8-4918-99d0-8d9afd634ac4', X-IBM-Client-Secret:'K6sR2tM2cS1xM6sY1pJ1uQ6cI3yA2eI7vV0oU3lX7kT0vH8eB0'}
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">headers req_header</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">url 'https://api-aws-qa.apps.ambientesbc.com/int/testing/v1/operations/product-specific/loans/deposits/consumer-loan/interest-rate/internal/loanType/interestRate'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">request {&quot;data&quot;: {&quot;customerSegment&quot;: &quot;S2&quot;,&quot;customerRelaibility&quot;: &quot;G1&quot;,&quot;fixedRateLoans&quot;: [{&quot;fixedRateLoanId&quot;: &quot;PA5&quot;}],&quot;variableRateLoans&quot;: [{&quot;variableRateLoanType&quot;: &quot;PA5&quot;}],&quot;amount&quot;: 10000000,&quot;loanTerm&quot;: 24}}</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; When passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">method POST</span>
+
+  <span class="lead-duration duration">7.773</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-56">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-56" class="collapse collapsable-details">
+        <pre>19:11:18.606 request:
+1 &gt; POST https://api-aws-qa.apps.ambientesbc.com/int/testing/v1/operations/product-specific/loans/deposits/consumer-loan/interest-rate/internal/loanType/interestRate
+1 &gt; message-id: ce0b5865-24eb-4410-b6e8-75327d5554e1
+1 &gt; id: 0b04f601-1120-4077-869b-0b6584cc08f0
+1 &gt; deviceId: 1
+1 &gt; token: 42d1b5d1-b650-4c3a-881a-dbd3df4df765
+1 &gt; timestamp: 21-04-2021
+1 &gt; consumer: APP
+1 &gt; Content-Type: application/vnd.bancolombia.v1+json; charset=UTF-8
+1 &gt; X-IBM-Client-Id: 3395d54f-19b8-4918-99d0-8d9afd634ac4
+1 &gt; X-IBM-Client-Secret: K6sR2tM2cS1xM6sY1pJ1uQ6cI3yA2eI7vV0oU3lX7kT0vH8eB0
+1 &gt; Content-Length: 190
+1 &gt; Host: api-aws-qa.apps.ambientesbc.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_281)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;data&quot;:{&quot;variableRateLoans&quot;:[{&quot;variableRateLoanType&quot;:&quot;PA5&quot;}],&quot;amount&quot;:10000000,&quot;loanTerm&quot;:24,&quot;customerSegment&quot;:&quot;S2&quot;,&quot;fixedRateLoans&quot;:[{&quot;fixedRateLoanId&quot;:&quot;PA5&quot;}],&quot;customerRelaibility&quot;:&quot;G1&quot;}}
+
+19:11:26.378 response time in milliseconds: 7771
+1 &lt; 504
+1 &lt; X-Backside-Transport: OK OK
+1 &lt; Connection: Keep-Alive
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Content-Type: application/vnd.bancolombia.v4+json; charset=utf-8
+1 &lt; API-Version: 1.0.0
+1 &lt; RateLimit-Limit: 100/hour
+1 &lt; Message-id: ce0b5865-24eb-4410-b6e8-75327d5554e1
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains
+1 &lt; X-Frame-Options: DENY
+1 &lt; Cache-Control: private, no-cache, no-store, max-age=0, no-transform
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; Content-Security-Policy: default-src 'self' *.bancolombia.com
+{&quot;meta&quot;:{&quot;_requestDateTime&quot;:&quot;2022-01-26T19:11:27.885Z&quot;,&quot;_applicationId&quot;:&quot;3395d54f-19b8-4918-99d0-8d9afd634ac4&quot;,&quot;_messageId&quot;:&quot;ce0b5865-24eb-4410-b6e8-75327d5554e1&quot;},&quot;title&quot;:&quot;Gateway Timeout&quot;,&quot;errors&quot;:[{&quot;code&quot;:&quot;SA504&quot;,&quot;detail&quot;:&quot;Tiempo de respuesta del proveedor del servicio excedido&quot;}],&quot;status&quot;:504}
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-57">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-57" class="collapse collapsable-details">
+        <pre>19:11:26.379 [print] {
+  &quot;meta&quot;: {
+    &quot;_requestDateTime&quot;: &quot;2022-01-26T19:11:27.885Z&quot;,
+    &quot;_applicationId&quot;: &quot;3395d54f-19b8-4918-99d0-8d9afd634ac4&quot;,
+    &quot;_messageId&quot;: &quot;ce0b5865-24eb-4410-b6e8-75327d5554e1&quot;
+  },
+  &quot;title&quot;: &quot;Gateway Timeout&quot;,
+  &quot;errors&quot;: [
+    {
+      &quot;code&quot;: &quot;SA504&quot;,
+      &quot;detail&quot;: &quot;Tiempo de respuesta del proveedor del servicio excedido&quot;
+    }
+  ],
+  &quot;status&quot;: 504
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Then passed">
+  <span class="keyword indention">&gt; Then</span>
+  <span class="name">response.status= 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def snippet = call read('snippet_interestrate.feature@P59')</span>
+
+  <span class="lead-duration duration">7.930</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name- passed">
+  <span class="keyword indention"></span>
+  <span class="name">co/com/bancolombia/acceptancetest/feautures/snippet_interestrate.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">configure logPrettyResponse = true</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">configure ssl = true</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">configure retry = { count: 3, interval: 3000 }</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def req_header = {message-id:'ce0b5865-24eb-4410-b6e8-75327d5554e1',id: '0b04f601-1120-4077-869b-0b6584cc08f0', deviceId: '1', token: '42d1b5d1-b650-4c3a-881a-dbd3df4df765', timestamp: '21-04-2021', consumer: 'APP', Content-Type:'application/vnd.bancolombia.v1+json',X-IBM-Client-Id:'3395d54f-19b8-4918-99d0-8d9afd634ac4', X-IBM-Client-Secret:'K6sR2tM2cS1xM6sY1pJ1uQ6cI3yA2eI7vV0oU3lX7kT0vH8eB0'}</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-58">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-58" class="collapse collapsable-details">
+        <pre>19:11:26.386 over-writing existing variable 'req_header' with new value: {message-id:'ce0b5865-24eb-4410-b6e8-75327d5554e1',id: '0b04f601-1120-4077-869b-0b6584cc08f0', deviceId: '1', token: '42d1b5d1-b650-4c3a-881a-dbd3df4df765', timestamp: '21-04-2021', consumer: 'APP', Content-Type:'application/vnd.bancolombia.v1+json',X-IBM-Client-Id:'3395d54f-19b8-4918-99d0-8d9afd634ac4', X-IBM-Client-Secret:'K6sR2tM2cS1xM6sY1pJ1uQ6cI3yA2eI7vV0oU3lX7kT0vH8eB0'}
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">headers req_header</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">url 'https://api-aws-qa.apps.ambientesbc.com/int/testing/v1/operations/product-specific/loans/deposits/consumer-loan/interest-rate/internal/loanType/interestRate'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">request {&quot;data&quot;: {&quot;customerSegment&quot;: &quot;S2&quot;,&quot;customerRelaibility&quot;: &quot;G1&quot;,&quot;fixedRateLoans&quot;: [{&quot;fixedRateLoanId&quot;: &quot;P59&quot;}],&quot;variableRateLoans&quot;: [{&quot;variableRateLoanType&quot;: &quot;P59&quot;}],&quot;amount&quot;: 10000000,&quot;loanTerm&quot;: 24}}</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; When passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">method POST</span>
+
+  <span class="lead-duration duration">7.923</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-59">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-59" class="collapse collapsable-details">
+        <pre>19:11:26.386 request:
+1 &gt; POST https://api-aws-qa.apps.ambientesbc.com/int/testing/v1/operations/product-specific/loans/deposits/consumer-loan/interest-rate/internal/loanType/interestRate
+1 &gt; message-id: ce0b5865-24eb-4410-b6e8-75327d5554e1
+1 &gt; id: 0b04f601-1120-4077-869b-0b6584cc08f0
+1 &gt; deviceId: 1
+1 &gt; token: 42d1b5d1-b650-4c3a-881a-dbd3df4df765
+1 &gt; timestamp: 21-04-2021
+1 &gt; consumer: APP
+1 &gt; Content-Type: application/vnd.bancolombia.v1+json; charset=UTF-8
+1 &gt; X-IBM-Client-Id: 3395d54f-19b8-4918-99d0-8d9afd634ac4
+1 &gt; X-IBM-Client-Secret: K6sR2tM2cS1xM6sY1pJ1uQ6cI3yA2eI7vV0oU3lX7kT0vH8eB0
+1 &gt; Content-Length: 190
+1 &gt; Host: api-aws-qa.apps.ambientesbc.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_281)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;data&quot;:{&quot;variableRateLoans&quot;:[{&quot;variableRateLoanType&quot;:&quot;P59&quot;}],&quot;amount&quot;:10000000,&quot;loanTerm&quot;:24,&quot;customerSegment&quot;:&quot;S2&quot;,&quot;fixedRateLoans&quot;:[{&quot;fixedRateLoanId&quot;:&quot;P59&quot;}],&quot;customerRelaibility&quot;:&quot;G1&quot;}}
+
+19:11:34.309 response time in milliseconds: 7922
+1 &lt; 504
+1 &lt; X-Backside-Transport: OK OK
+1 &lt; Connection: Keep-Alive
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Content-Type: application/vnd.bancolombia.v4+json; charset=utf-8
+1 &lt; API-Version: 1.0.0
+1 &lt; RateLimit-Limit: 100/hour
+1 &lt; Message-id: ce0b5865-24eb-4410-b6e8-75327d5554e1
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains
+1 &lt; X-Frame-Options: DENY
+1 &lt; Cache-Control: private, no-cache, no-store, max-age=0, no-transform
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; Content-Security-Policy: default-src 'self' *.bancolombia.com
+{&quot;meta&quot;:{&quot;_requestDateTime&quot;:&quot;2022-01-26T19:11:35.730Z&quot;,&quot;_applicationId&quot;:&quot;3395d54f-19b8-4918-99d0-8d9afd634ac4&quot;,&quot;_messageId&quot;:&quot;ce0b5865-24eb-4410-b6e8-75327d5554e1&quot;},&quot;title&quot;:&quot;Gateway Timeout&quot;,&quot;errors&quot;:[{&quot;code&quot;:&quot;SA504&quot;,&quot;detail&quot;:&quot;Tiempo de respuesta del proveedor del servicio excedido&quot;}],&quot;status&quot;:504}
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-60">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-60" class="collapse collapsable-details">
+        <pre>19:11:34.309 [print] {
+  &quot;meta&quot;: {
+    &quot;_requestDateTime&quot;: &quot;2022-01-26T19:11:35.730Z&quot;,
+    &quot;_applicationId&quot;: &quot;3395d54f-19b8-4918-99d0-8d9afd634ac4&quot;,
+    &quot;_messageId&quot;: &quot;ce0b5865-24eb-4410-b6e8-75327d5554e1&quot;
+  },
+  &quot;title&quot;: &quot;Gateway Timeout&quot;,
+  &quot;errors&quot;: [
+    {
+      &quot;code&quot;: &quot;SA504&quot;,
+      &quot;detail&quot;: &quot;Tiempo de respuesta del proveedor del servicio excedido&quot;
+    }
+  ],
+  &quot;status&quot;: 504
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Then passed">
+  <span class="keyword indention">&gt; Then</span>
+  <span class="name">response.status= 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">21.785</span>
+
+
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-61">
+
+<div class="brief failed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Validate that the API return correct interest rate for G1 risk group and PA5 plan</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-61" class="collapse collapsable-details  in ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-62">
+
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-62" class="inner-level collapse collapsable-details  in ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">headers req_header</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">url 'https://financiacion-int-qa.apps.ambientesbc.com/loans-offer/utilities/api/v1/retrieve'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request {&quot;data&quot;: {&quot;customerId&quot;: {&quot;idType&quot;: &quot;CC&quot;,&quot;idNumber&quot;: &quot;2101068007&quot;,&quot;companyIdType&quot;: &quot;NIT&quot;,&quot;companyIdNumber&quot;: &quot;45678945&quot;,&quot;customerReliability&quot;: &quot;G1&quot;},&quot;offer&quot;: {&quot;productId&quot;: &quot;1&quot;,&quot;amount&quot;: 10000000,&quot;interestRateType&quot; : &quot;F&quot;,&quot;term&quot;: 36,&quot;insurances&quot;: [{&quot;type&quot;: &quot;SD&quot;}]}}}</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method POST</span>
+
+  <span class="lead-duration duration">21.782</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-63">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-63" class="collapse collapsable-details">
+        <pre>19:11:34.310 request:
+1 &gt; POST https://financiacion-int-qa.apps.ambientesbc.com/loans-offer/utilities/api/v1/retrieve
+1 &gt; message-id: ce0b5865-24eb-4410-b6e8-75327d5554e1
+1 &gt; id: 0b04f601-1120-4077-869b-0b6584cc08f0
+1 &gt; deviceId: 1
+1 &gt; token: 42d1b5d1-b650-4c3a-881a-dbd3df4df765
+1 &gt; timestamp: 21-04-2021
+1 &gt; consumer: APP
+1 &gt; Content-Type: application/vnd.bancolombia.v1+json; charset=UTF-8
+1 &gt; X-IBM-Client-Id: 3395d54f-19b8-4918-99d0-8d9afd634ac4
+1 &gt; X-IBM-Client-Secret: K6sR2tM2cS1xM6sY1pJ1uQ6cI3yA2eI7vV0oU3lX7kT0vH8eB0
+1 &gt; Content-Length: 247
+1 &gt; Host: financiacion-int-qa.apps.ambientesbc.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_281)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;data&quot;:{&quot;offer&quot;:{&quot;amount&quot;:10000000,&quot;insurances&quot;:[{&quot;type&quot;:&quot;SD&quot;}],&quot;productId&quot;:&quot;1&quot;,&quot;term&quot;:36,&quot;interestRateType&quot;:&quot;F&quot;},&quot;customerId&quot;:{&quot;customerReliability&quot;:&quot;G1&quot;,&quot;companyIdType&quot;:&quot;NIT&quot;,&quot;idType&quot;:&quot;CC&quot;,&quot;companyIdNumber&quot;:&quot;45678945&quot;,&quot;idNumber&quot;:&quot;2101068007&quot;}}}
+
+19:11:56.091 response time in milliseconds: 21781
+1 &lt; 500
+1 &lt; Date: Thu, 27 Jan 2022 00:12:04 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 57
+1 &lt; Connection: keep-alive
+1 &lt; strict-transport-security: max-age=31536000; includeSubDomains
+1 &lt; content-security-policy: default-src https:
+1 &lt; x-content-type-options: nosniff
+1 &lt; x-frame-options: DENY
+1 &lt; x-xss-protection: 1; mode=block
+1 &lt; cache-control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; pragma: no-cache
+1 &lt; referrer-policy: no-referrer
+1 &lt; x-envoy-upstream-service-time: 21176
+1 &lt; server: undefined
+{&quot;errors&quot;:[{&quot;code&quot;:&quot;LI012&quot;,&quot;detail&quot;:&quot;Map server error&quot;}]}
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print snippet_PA5.response</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-64">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-64" class="collapse collapsable-details">
+        <pre>19:11:56.094 [print] {
+  &quot;meta&quot;: {
+    &quot;_requestDateTime&quot;: &quot;2022-01-26T19:11:27.885Z&quot;,
+    &quot;_applicationId&quot;: &quot;3395d54f-19b8-4918-99d0-8d9afd634ac4&quot;,
+    &quot;_messageId&quot;: &quot;ce0b5865-24eb-4410-b6e8-75327d5554e1&quot;
+  },
+  &quot;title&quot;: &quot;Gateway Timeout&quot;,
+  &quot;errors&quot;: [
+    {
+      &quot;code&quot;: &quot;SA504&quot;,
+      &quot;detail&quot;: &quot;Tiempo de respuesta del proveedor del servicio excedido&quot;
+    }
+  ],
+  &quot;status&quot;: 200
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">response.status= 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* failed">
+  <span class="keyword indention">*</span>
+  <span class="name">def val = response.data.installmentsData.arreasInterestRate</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-65">
+          <a>&gt;&gt;&gt;&gt;</a>
+      </div>
+      <div id="msg-65" class="collapse collapsable-details  in ">
+        <pre>&gt;&gt;&gt;&gt; js failed:
+01: response.data.installmentsData.arreasInterestRate
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: TypeError: Cannot read property &quot;installmentsData&quot; from undefined
+- &lt;js&gt;.:program(Unnamed:1)
+
+classpath:co/com/bancolombia/acceptancetest/feautures/utilities_retrieve.feature:49</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-66">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-66" class="collapse collapsable-details">
+        <pre>19:11:56.095 classpath:co/com/bancolombia/acceptancetest/feautures/utilities_retrieve.feature:49
+* def val = response.data.installmentsData.arreasInterestRate
+&gt;&gt;&gt;&gt; js failed:
+01: response.data.installmentsData.arreasInterestRate
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: TypeError: Cannot read property &quot;installmentsData&quot; from undefined
+- &lt;js&gt;.:program(Unnamed:1)
+
+classpath:co/com/bancolombia/acceptancetest/feautures/utilities_retrieve.feature:49
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">match snippet_PA5.response.data.rateRange[0].rangeType[*].arrearsRate contains val</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">print response.data.installmentsData</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br/>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: "MsUtilities"
+  devtools:
+    add-properties: false
+  profiles:
+    include: null
+  cache:
+    type: "redis"
+  redis:
+    host: localhost
+    port: 6379
+
+routes:
+  basePath: /api/v1
+  health: /health
+  retrieve: /retrieve
+
+routesLF:
+  urlBase: https://internal-apigateway-qa.bancolombia.corp/int/testing
+  urlBaseInterestRate: https://api-aws-qa.apps.ambientesbc.com/int/testing
+  urlBaseMap: https://financiacion-ext-qa.apps.ambientesbc.com/map
+  routeInstallments: /v1/operations/product-specific/loan-utilities/installments/calculateInstallment
+  routeInterestRate: /v1/operations/product-specific/loans/deposits/consumer-loan/interest-rate/internal/loanType/interestRate
+  routeCustomerDetails: /v1/sales-services/customer-management/customer-reference-data-management/customer-personal-data/retrieve-detaild-information
+  routeCustomerContact: /v1/sales-services/customer-management/customer-reference-data-management/customer-contact/retrieve-contact-information
+  routeCustomerCommercial: /v1/sales-services/customer-management/Customer-Relationship-Management/customer-commercial-data/customers/retrieve-commercial-management
+  ruleValidate: /api/v1/rule/validate
+
+header:
+  X-IBM-Client-Id: cb440ddd-383c-4995-a8b1-4030fe343f9b
+  X-IBM-Client-Secret: G6gV6xI5jF4mS0eU0mM0xD7oS2gP1lO2bB8fC1uN7kE7aK4bM6
+  X-IBM-Client-Id-Installments: 753e8ba1-d7e4-4228-a5f0-7eab765a4061
+  X-IBM-Client-Secret-Installments: O2sG4yU8lO0cQ3oF5lA3nC2sV6jD6fQ0nD7pO2yM0mA0gS4wA5
+  MAP-Client-Id: c2967c66-6ff5-400c-bf2a-00b0d74b8034
+  MAP-Client-Secret: 970c9d4b-eeec-4b83-85e6-5df8d0e18ad2
+
+logging:
+  level:
+    ROOT: "DEBUG"

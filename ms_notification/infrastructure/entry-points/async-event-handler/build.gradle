@@ -1,0 +1,9 @@
+dependencies {
+    compile project(':model')
+    compile project(':usecase')
+    compile 'org.reactivecommons:async-commons-starter:1.0.0-beta5'
+    compile 'org.springframework:spring-context'
+    implementation 'software.amazon.awssdk:bom:2.16.36'
+    implementation 'software.amazon.awssdk:sts:2.16.36'
+    implementation 'software.amazon.awssdk:sqs:2.16.36'
+}

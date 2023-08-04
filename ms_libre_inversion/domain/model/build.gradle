@@ -1,0 +1,8 @@
+dependencies {
+    implementation group: 'javax.xml.bind', name: 'jaxb-api', version: '2.3.0'
+    implementation group: 'com.itextpdf', name: 'itext7-core', version: '7.1.9'
+    compile 'com.fasterxml.jackson.core:jackson-databind'
+    implementation group: 'com.itextpdf', name: 'html2pdf', version: '2.1.6'
+    implementation 'com.itextpdf:pdfa:7.1.17'
+    implementation 'co.com.bancolombia:technical-log:1.1'
+}

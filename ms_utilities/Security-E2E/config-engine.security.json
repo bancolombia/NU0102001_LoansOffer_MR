@@ -1,0 +1,43 @@
+{
+  "endpoint": "https://financiacion-int-qa.apps.ambientesbc.com",
+  "operations": [
+    {
+      "operation": {
+        "security_auth": {
+          "type": "none"
+        },
+        "method": "POST",
+        "path": "/loans-offer/utilities/api/v1/retrieve",
+        "payload": {
+          "data": {
+            "customer": {
+              "identification": {
+                "type": "TIPDOC_FS001",
+                "number": "2101068007"
+              },
+              "customerReliability": "G2"
+            },
+            "offer": {
+              "productId": "14",
+              "amount": 15000000,
+              "interestRateType": "F",
+              "term": 48,
+              "insurances": {
+                "insurance": [
+                  {
+                    "type": "SV"
+                  }
+                ]
+              }
+            },
+            "amortizationSchedule": false
+          }
+        },
+        "headers": {
+          "Content-Type": "application/json",
+          "id": "0b04f601-1120-4077-869b-0b6584cc08f0"
+        }
+      }
+    }
+  ]
+}

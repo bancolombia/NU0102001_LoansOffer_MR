@@ -1,0 +1,3 @@
+dependencies {
+    compile group: 'com.github.joschi.jackson', name: 'jackson-datatype-threetenbp', version: '2.6.4'
+}

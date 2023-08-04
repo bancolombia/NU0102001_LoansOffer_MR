@@ -1,0 +1,85 @@
+{
+  "endpoint":"https://localhost",
+  "operations": [
+    {
+      "operation": {
+        "security_auth": {
+          "type": "none"
+        },
+        "method": "POST",
+        "path": "demo",
+        "payload": {
+        },
+        "headers":{
+          "Message-Id": "123",
+          "Content-Type": "application/json",
+          "id":"123",
+          "deviceId":"1",
+          "token":"123",
+          "timestamp":"21-12-2021",
+          "consumer":"project"
+        }
+      }
+    },
+    {
+      "operation": {
+        "security_auth": {
+          "type": "none"
+        },
+        "method": "POST",
+        "path": "demo",
+        "payload": {
+        },
+        "headers":{
+          "Message-Id": "123",
+          "Content-Type": "application/json",
+          "id":"123",
+          "deviceId":"1",
+          "token":"123",
+          "timestamp":"21-12-2021",
+          "consumer":"APP"
+        }
+      }
+    },
+    {
+      "operation": {
+        "security_auth": {
+          "type": "none"
+        },
+        "method": "POST",
+        "path": "demo",
+        "payload": {
+        },
+        "headers":{
+          "Message-Id": "123",
+          "Content-Type": "123",
+          "id":"123",
+          "deviceId":"1",
+          "token":"123",
+          "timestamp":"21-12-2021",
+          "consumer":"123"
+        }
+      }
+    },
+    {
+      "operation": {
+        "security_auth": {
+          "type": "none"
+        },
+        "method": "POST",
+        "path": "demo",
+        "payload": {
+        },
+        "headers":{
+          "Message-Id": "123",
+          "Content-Type": "application/json",
+          "id":"123",
+          "deviceId":"1",
+          "token":"123",
+          "timestamp":"21-12-2021",
+          "consumer":"123"
+        }
+      }
+    }
+  ]
+}

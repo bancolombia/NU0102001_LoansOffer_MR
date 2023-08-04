@@ -1,0 +1,8 @@
+dependencies {
+    compile project(':model')
+    compile 'org.springframework:spring-context'
+    implementation 'software.amazon.awssdk:bom:2.16.36'
+    implementation 'software.amazon.awssdk:sts:2.16.36'
+    implementation 'software.amazon.awssdk:sqs:2.16.36'
+    implementation 'co.com.bancolombia:technical-log:1.1'
+}

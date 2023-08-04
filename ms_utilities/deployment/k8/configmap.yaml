@@ -1,0 +1,56 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: #{configmap}#
+  namespace: #{namespace}#
+data:
+  application.yaml: |-
+    server:
+      port: #{container-port}#
+
+    spring:
+      application:
+        name: "MsUtilities"
+      devtools:
+        add-properties: false
+      profiles:
+        include: null
+      cache:
+        type: "redis"
+      redis:
+        host: #{redis-host}#
+        port: #{redis-port}#
+
+    #Rutas que se expondran desde el orquestador
+    routes:
+      basePath: "/api/v1"
+      health: "/health"
+      retrieve: "/retrieve"
+
+    #Rutas que se consumiran desde el orquestador
+    routesLF:
+      urlBase: #{url-base}#
+      urlBaseInterestRate: #{url-base-interest-rate}#
+      urlBaseMap: #{url-base-map}#
+      routeInstallments: "/v1/operations/product-specific/loan-utilities/installments/calculateInstallment"
+      routeInterestRate: "/v1/operations/product-specific/loans/deposits/consumer-loan/interest-rate/internal/loanType/interestRate"
+      routeCustomerDetails: "/v1/sales-services/customer-management/customer-reference-data-management/customer-personal-data/retrieve-detaild-information"
+      routeCustomerContact: "/v1/sales-services/customer-management/customer-reference-data-management/customer-contact/retrieve-contact-information"
+      routeCustomerCommercial: "/v1/sales-services/customer-management/Customer-Relationship-Management/customer-commercial-data/customers/retrieve-commercial-management"
+      ruleValidate: "/api/v1/rule/validate"
+
+    header:
+      X-IBM-Client-Id: #{x-ibm-client-id}#
+      X-IBM-Client-Secret: #{x-ibm-client-secret}#
+      X-IBM-Client-Id-Installments: #{x-ibm-client-id-installments}#
+      X-IBM-Client-Secret-Installments: #{x-ibm-client-secret-installments}#
+      MAP-Client-Id: #{map-client-id}#
+      MAP-Client-Secret: #{map-secret-id}#
+
+    springdoc:
+      api-docs:
+        groups:
+          enabled: true
+          path: /swagger-doc/v3/api-docs
+      swagger-ui:
+        path: /swagger-doc/swagger-ui.html

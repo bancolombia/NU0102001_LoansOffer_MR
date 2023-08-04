@@ -1,0 +1,27 @@
+##Spring Configuration
+server:
+  port: 8080
+
+spring:
+  application:
+    name: test
+  webflux:
+    base-path: /api/v1
+  cache:
+    type: "redis"
+  redis:
+    host: localhost
+    port: 6379
+  codec:
+    max-in-memory-size: 10MB
+
+
+#Rutas que se expondran desde el orquestador
+entry-point:
+  retrieve: /retrieve
+  enable: /enable
+  confirm: /confirm
+  sell: /sell
+  health: /health
+
+  #Rutas que se consumiran desde el orquestador

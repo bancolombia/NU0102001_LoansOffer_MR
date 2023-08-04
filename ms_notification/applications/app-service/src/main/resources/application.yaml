@@ -1,0 +1,36 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: "Notifications"
+  devtools:
+    add-properties: false
+  profiles:
+    include: null
+adapter:
+  email-basic:
+    urlBase: "https://internal-apigateway-qa.bancolombia.corp/int/testing"
+    url: "/v1/business-support/document-management/correspondence/email-basic"
+  email-attached:
+    urlBase: "https://internal-apigateway-qa.bancolombia.corp/int/testing"
+    url: "/v1/business-support/document-management/correspondence/email-attached-base64"
+
+  sms:
+    urlBase: "https://internal-apigateway-qa.bancolombia.corp/int/testing"
+    url: "/v1/business-support/document-management/correspondence/send-sms/massive"
+header:
+  X-IBM-Client-Secret-dev: qU8vJ7fK1wI7dS8dW3iK0bA7nN0aU8eW2vP8sT5rL2jC0uG4tL
+  X-IBM-Client-Id-dev: ef6f5124-4811-4a55-9295-5767e57946d9
+  X-IBM-Client-Secret-qa: fR0uS6qE1yU7dJ5nN1nJ8eS7gI5lN2wD2iC7rU3bE4bD8aB7aQ
+  X-IBM-Client-Id-qa: 4d2d53c2-25f5-4a32-84c8-75bf2e9a0be4
+  X-IBM-Client-Secret: G6gV6xI5jF4mS0eU0mM0xD7oS2gP1lO2bB8fC1uN7kE7aK4bM6
+  X-IBM-Client-Id: cb440ddd-383c-4995-a8b1-4030fe343f9b
+sqs:
+  queueUrl: https://sqs.us-east-1.amazonaws.com/360735510274/nu0102001-loans-offer-dev-offer
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+  instance:
+    prefer-ip-address: true
+    hostname: localhost
